@@ -1,5 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+img {
+    max-width: 25%;
+    height: auto;
+}
+
+body {
+  background-color: blue;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.container {
+
+}
+
+section{
+
+}
+
 header {
-   background: url(../images/hero.jpg) center / cover;
    height: 60vh;
    justify-content: center;
    text-align: center;
