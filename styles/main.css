@@ -1,5 +1,4 @@
 
-
 html {
   font-size: 10px;
 }
@@ -136,6 +135,9 @@ margin-top: 10rem;
 }
 
 /*content*/
+.about-content{
+  background-color: #F6E1E6;
+}
 .content{
   background-color: #F2F2F2;
 }
