@@ -1,49 +1,233 @@
-header {
-   background: url(../images/hero.jpg) center / cover;
-   height: 60vh;
-   justify-content: center;
-   text-align: center;
- }
 
+
+html {
+  font-size: 10px;
+}
 h1{
-  color: hsla(0,0%, 100%, 0.9);
-  font-weight: bold;
+  font-size: 4rem;
+  line-height: 7rem;
+  font-family: 'Poiret One', cursive;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 10rem;
 }
-
-.slogan {
-  color: hsla(0, 0%, 100%, 0.7);
-  font-weight: lighter;
+header{
+  border-bottom: .5rem solid #F6E1E6;
+  margin-top:10rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+p {
   font-size: 1.6rem;
+  line-height: 7rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-top:3rem;
+  padding-bottom: 2rem;
+  width:75%;
 }
-main {
-  max-width: 900px;
+.button {
+    background-color: #F6E1E6;
+    border: none;
+    color: black;
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 300;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5rem;
+    margin-bottom: 10rem;
 }
-
-.project-description {
-  padding-left: 0;
-}
-
-.project img {
-  width: 100%
-}
-
-footer.mdl-mini-footer {
-   bottom: 0;
-   padding:0.5rem;
-   position: fixed;
-   width: 100%
-   z-index: 1;
-}
-
-footer.mdl-mini-footer > ul {
-  margin: auto;
-  font-size; 2rem;
-}
-@media screen and (max-width: 1024px) {
-  header.mdl-layout__header {
-    display: flex;
+.button:hover {
+    background-color: white;
+    color: #F6E1E6;
   }
+
+/*images*/
+.contact{
+  height: 10rem;
+  width: 10rem;
 }
-body {
-  padding-bottom: 5rem;
+
+.herologo {
+  height:200%;
+  width:100%;
+  align-items: center;
+}
+.hshimage {
+  width: 100%;
+  border-top:.5rem solid #F6E1E6;
+  border-bottom:.5rem solid #F6E1E6;
+}
+.icon {
+margin-right: 5rem;
+  height:10rem;
+  width:8rem;
+  align-self: flex-end;
+
+}
+.icon2{
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  flex-direction: row;
+}
+.leahcoover{
+  justify-content: flex-start;
+}
+.logo2{
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.logo-sketch{
+  border-top:.5rem solid #F6E1E6;
+  border-bottom:.5rem solid #F6E1E6;
+  display:flex;
+
+}
+.footerlogo{
+margin-left: 33%;
+margin-right: 33%;
+margin-top: 10rem;
+}
+
+.persona{
+  border-top:.5rem solid #F6E1E6;
+  border-bottom:.5rem solid #F6E1E6;
+
+}
+.styleguide{
+  margin-top: 10rem;
+
+}
+.tools{
+  width: 100%;
+  height:50%;
+  border-top:.5rem solid #F6E1E6;
+  border-bottom:.5rem solid #F6E1E6;
+}
+.userflowpic{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wireframe-sketch{
+  border-top:.5rem solid #F6E1E6;
+  border-bottom:.5rem solid #F6E1E6;
+  height: 40%;
+
+}
+.wireframe{
+  border-top:.5rem solid #F6E1E6;
+  border-bottom:.5rem solid #F6E1E6;
+}
+
+/*content*/
+.content{
+  background-color: #F2F2F2;
+}
+.problem-solution{
+  background-color: #F2F2F2;
+}
+.competitive-analysis{
+  background-color: #F2F2F2;
+}
+.user-research{
+  background-color: #F2F2F2;
+}
+.user-personas{
+background-color: #F2F2F2;
+border-top:.5rem solid #F6E1E6;
+border-bottom:.5rem solid #F6E1E6;
+}
+.user-stories{
+  background-color: #F2F2F2;
+}
+.user-flows{
+  background-color: #F2F2F2;
+}
+.wireframes{
+  background-color: #F2F2F2;
+}
+.branding{
+  background-color: #F2F2F2;
+}
+.prototypes{
+  background-color: #F2F2F2;
+}
+.user-testing{
+  background-color: #F2F2F2;
+}
+.user-testing2{
+  background-color: #F2F2F2;
+}
+.conclusion{
+  background-color: #F2F2F2;
+}
+.cards {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+      background-color: #F6E1E6;
+      width: 50%;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 1.6rem;
+      text-align: center;
+      padding: 5rem;
+      margin:2rem;
+      display: inline-block;
+    }
+.design-roles{
+  margin-top: 10rem;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container > * {
+  flex: 1 1 auto;
+}
+/*
+header
+*/
+.header {
+  display:flex;
+  align-items: center;
+  justify-content:flex-end;
+}
+
+/*
+content
+*/
+.content {
+  overflow-y:scroll;
+  -webkit-overflow-scrolling:touch;
+  padding-top: 8rem;
+}
+
+/*
+footer
+*/
+footer {
+  display:flex;
+  background-color: #F6E1E6;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 0rem;
 }
