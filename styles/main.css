@@ -17,6 +17,7 @@ header{
   justify-content: flex-end;
   flex-wrap: wrap;
 }
+
 p {
   font-size: 1.6rem;
   line-height: 7rem;
@@ -28,6 +29,7 @@ p {
   padding-bottom: 2rem;
   width:75%;
 }
+
 .button {
     background-color: #F6E1E6;
     border: none;
@@ -79,6 +81,9 @@ margin-right: 5rem;
   margin-bottom: 5rem;
   flex-direction: row;
 }
+.landingpage1, .landingpage2, .landingpage3{
+  width: 45%;
+}
 .leahcoover{
   justify-content: flex-start;
 }
@@ -108,9 +113,19 @@ margin-top: 10rem;
   border-bottom:.5rem solid #F6E1E6;
 
 }
+.save{
+  width:45%;
+}
+.search1, .search2, .search3{
+  width:45%;
+}
 .styleguide{
   margin-top: 10rem;
 
+}
+.sweethomelogo{
+  width:75%;
+  
 }
 .tools{
   width: 100%;
@@ -134,8 +149,11 @@ margin-top: 10rem;
   border-bottom:.5rem solid #F6E1E6;
 }
 
+
+
+
 /*content*/
-.about-content{
+.about-content, .content, .problem-solution, .competitive-analysis, .user-research, {
   background-color: #F6E1E6;
 }
 .content{
