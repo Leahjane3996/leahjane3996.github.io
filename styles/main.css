@@ -1,7 +1,16 @@
 
+
 html {
   font-size: 10px;
 }
+* {
+    box-sizing: border-box;
+}
+img{
+  max-width: 100%
+}
+
+
 h1{
   font-size: 4rem;
   line-height: 7rem;
@@ -9,13 +18,21 @@ h1{
   margin-left: 5rem;
   margin-right: 5rem;
   margin-top: 10rem;
+  padding-top: 5rem;
 }
+
+
 header{
-  border-bottom: .5rem solid #F6E1E6;
-  margin-top:10rem;
   display: flex;
-  justify-content: flex-end;
   flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: .5rem solid #F6E1E6;
+}
+
+footer {
+  display:flex;
+  background-color: #F6E1E6;
+  padding-right: 5rem;
 }
 
 p {
@@ -29,6 +46,96 @@ p {
   padding-bottom: 2rem;
   width:75%;
 }
+/*sections*/
+.brandingimages{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.copyrightinfo {
+  margin-top: 11rem;
+  margin-bottom: 5rem;
+  display:flex;
+  justify-content: flex-end;
+}
+.logo2{
+  display: flex;
+  justify-content: space-around;
+}
+.nav{
+  padding:5rem;
+}
+.role{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  padding-top: 0;
+  margin-top:0;
+  margin-bottom: 0;
+}
+.sweethomelogo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.us-icons{
+  display: flex;
+  justify-content: center;
+}
+
+.problem-solution, .competitive-analysis, .user-research,.user-stories, .user-flows, .branding, .prototypes, .conclusion {
+  background-color: #F2F2F2;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+.prototype-images{
+  display:flex;
+  justify-content: center;
+  margin-left: 10rem;
+}
+
+
+.user-personas{
+background-color: #F2F2F2;
+border-top:.5rem solid #F6E1E6;
+border-bottom:.5rem solid #F6E1E6;
+}
+.user-testing, .user-testing2{
+  background-color: #F2F2F2;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+
+}
+.usertesting-save, .usertesting-explore{
+  display:flex;
+  justify-content: space-around;
+}
+.cards {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+      background-color: #F6E1E6;
+      width: 50%;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 1.6rem;
+      text-align: center;
+      padding: 2rem;
+      margin:2rem;
+      display: inline-block;
+    }
+.design-roles{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  justify-content: center;
+}
+
+
+/*buttons dropdowns*/
 
 .button {
     background-color: #F6E1E6;
@@ -50,24 +157,76 @@ p {
     color: #F6E1E6;
   }
 
-/*images*/
-.contact{
-  height: 10rem;
-  width: 10rem;
+  /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #F9ECEF; /* pink*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.herologo {
-  height:200%;
-  width:100%;
-  align-items: center;
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+
+/*images*/
+
+
+
+.footerlogo{
+margin-top: 10rem;
+position: relative;
+top:12rem;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
 .hshimage {
   width: 100%;
   border-top:.5rem solid #F6E1E6;
   border-bottom:.5rem solid #F6E1E6;
+  display: flex;
+  display:inline-block;
 }
 .icon {
-margin-right: 5rem;
+  margin-right: 5rem;
   height:10rem;
   width:8rem;
   align-self: flex-end;
@@ -76,18 +235,35 @@ margin-right: 5rem;
 .icon2{
   height: 10rem;
   width: 10rem;
-  display: flex;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  flex-direction: row;
 }
-.landingpage1, .landingpage2, .landingpage3{
-  width: 45%;
+
+.leaf{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    object-fit: contain;
+    margin-top: 0;
+    padding: 0;
+    object-position: top;
 }
 .leahcoover{
-  justify-content: flex-start;
+  justify-content: center;
+  width: 65%;
+  padding-bottom: 2rem;
+  border-bottom: solid black;
+  border-width: thin;
 }
-.logo2{
+
+.leahcoover2{
+  width:25%;
+  display: flex;
+  align-self: flex-start;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+  margin-left: 65%;
+}
+
+.logoimage2{
   height: 20rem;
   width: 20rem;
   display: flex;
@@ -96,158 +272,72 @@ margin-right: 5rem;
   display: flex;
   justify-content: space-around;
 }
-.logo-sketch{
+
+.logosketch{
   border-top:.5rem solid #F6E1E6;
   border-bottom:.5rem solid #F6E1E6;
   display:flex;
+  object-fit: scale-down;
+  transform:rotate(90);
+}
 
-}
-.footerlogo{
-margin-left: 33%;
-margin-right: 33%;
-margin-top: 10rem;
-}
+
 
 .persona{
-  border-top:.5rem solid #F6E1E6;
-  border-bottom:.5rem solid #F6E1E6;
+
+  width: 100%;
 
 }
-.save{
+
+.save, .save2, .explore{
   width:45%;
+  border: .5rem solid black;
+  border-width: thin;
 }
-.search1, .search2, .search3{
-  width:45%;
+.search1, .search2, .search3,.landingpage1, .landingpage2,.landingpage3 {
+  padding: 5rem;
+
 }
+
 .styleguide{
   margin-top: 10rem;
+  width: 100%;
+}
 
-}
-.sweethomelogo{
-  width:75%;
-  
-}
 .tools{
   width: 100%;
-  height:50%;
+  height:30%;
   border-top:.5rem solid #F6E1E6;
   border-bottom:.5rem solid #F6E1E6;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  object-fit: scale-down;
 }
 .userflowpic{
   margin-top: 10px;
   margin-bottom: 10px;
+  width:75%;
 }
 
 .wireframe-sketch{
   border-top:.5rem solid #F6E1E6;
   border-bottom:.5rem solid #F6E1E6;
   height: 40%;
-
+  object-fit: contain;
 }
 .wireframe{
-  border-top:.5rem solid #F6E1E6;
+
   border-bottom:.5rem solid #F6E1E6;
 }
 
 
 
-
-/*content*/
-.about-content, .content, .problem-solution, .competitive-analysis, .user-research, {
-  background-color: #F6E1E6;
-}
-.content{
-  background-color: #F2F2F2;
-}
-.problem-solution{
-  background-color: #F2F2F2;
-}
-.competitive-analysis{
-  background-color: #F2F2F2;
-}
-.user-research{
-  background-color: #F2F2F2;
-}
-.user-personas{
-background-color: #F2F2F2;
-border-top:.5rem solid #F6E1E6;
-border-bottom:.5rem solid #F6E1E6;
-}
-.user-stories{
-  background-color: #F2F2F2;
-}
-.user-flows{
-  background-color: #F2F2F2;
-}
-.wireframes{
-  background-color: #F2F2F2;
-}
-.branding{
-  background-color: #F2F2F2;
-}
-.prototypes{
-  background-color: #F2F2F2;
-}
-.user-testing{
-  background-color: #F2F2F2;
-}
-.user-testing2{
-  background-color: #F2F2F2;
-}
-.conclusion{
-  background-color: #F2F2F2;
-}
-.cards {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-      background-color: #F6E1E6;
-      width: 50%;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 300;
-      font-size: 1.6rem;
-      text-align: center;
-      padding: 5rem;
-      margin:2rem;
-      display: inline-block;
-    }
-.design-roles{
-  margin-top: 10rem;
-  justify-content: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
+.contact-logo{
+  width:10%;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+  padding-right: .5rem;
 }
 .container > * {
   flex: 1 1 auto;
-}
-/*
-header
-*/
-.header {
-  display:flex;
-  align-items: center;
-  justify-content:flex-end;
-}
-
-/*
-content
-*/
-.content {
-  overflow-y:scroll;
-  -webkit-overflow-scrolling:touch;
-  padding-top: 8rem;
-}
-
-/*
-footer
-*/
-footer {
-  display:flex;
-  background-color: #F6E1E6;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-top: 0rem;
 }

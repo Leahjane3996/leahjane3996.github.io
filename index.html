@@ -7,49 +7,64 @@
   <title>Leah Coover</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-
-
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
-
-
-
-
-
 </head>
 <body>
 
 
   <div class="container">
+    <div class="nav">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="#">Contact</a>
+        <a href="index.html">Home</a>
+      </div>
 
-    <header class="header">
-        <img src="images/hero.png" class="herologo"alt="logo">
-        <img src="images/hamburger.png" class="icon"alt="menu">
-        <a href="about.html" class="button">About</a>
-      </header>
+      <span style="font-size:60px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+    </div>
+    <header>
+      <img src="images/Leah Coover.png" class="leahcoover"alt"Leah Coover">
+      <p class="role"> UX Designer - Denver, CO </p>
+      <img src="images/leaf2.png" class ="leaf"alt="leaf">
+    </header>
 
     <div class="content">
       <h1> Sweet Home </h1>
       <p> Sweet Home is a web based app centered around home improvement.  Users can get inspired through a catalogue of pictures, store that information found, and lastly use it as a vessel to share their ideas.</p>
-       <a href="project.html" class="button">View Case Study</a>
+      <a href="project.html" class="button">View Case Study</a>
       <img src="images/serachcomputer.png" class="hshimage"alt="houses">
-        <img src="images/logo.png" class="footerlogo" alt="logo">
-      </div>
+      <img src="images/logo.png" class="footerlogo" alt="logo">
     </div>
-    <a href="about.html" class="button">About</a>
+  </div>
 
 
-      <footer>
 
-        <p> C 2018 Designed and Developed by Leah Coover </p>
-        <img src="images/linkedin.svg" class="contact" alt="linkedin">
-        <img src="images/google.svg" class="contact" alt="google">
+  <footer>
+    <p class="copyrightinfo"> C 2018 Designed and Developed by Leah Coover </p>
+    <section class="contact-logos">
+    <img src="images/linkedin3.png" class="contact-logo" alt="linkedin">
+    <img src="images/mail.png" class="contact-logo" alt="google">
+  </section>
+
+  </footer>
 
 
-    </footer>
+</div>
+</body>
 
 
-    </div>
+</html>
 
-  </body>
-  </html>

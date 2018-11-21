@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" cotent="width=device-width, initial-scale=1.0">
   <title>Leah Coover</title>
@@ -10,13 +12,33 @@
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <img src="images/leahcoover.png" class="leahcoover" alt="logo">
-      <img src="images/hamburger.png" class="icon"alt="menu">
-    </header>
+<div class="container">
+  <div class="nav">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="about.html">About</a>
+      <a href="project.html">Projects</a>
+      <a href="#">Contact</a>
+      <a href="index.html">Home</a>
+    </div>
 
-    <section class="content">
+    <span style="font-size:60px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+  </div>
+  <header class="projectheader">
+    <img src="images/Leah Coover.png" class="leahcoover2" alt=leahcoover>
+  </header>
+
+    <div class="content">
       <h1> Sweet Home </h1>
       <p> Sweet Home is a web based app centered around home improvement.  Users can get inspired through a catalogue of pictures, store that information found, and lastly use it as a vessel to share their ideas.</p>
       <a href="https://invis.io/CDNJOS6APXS" class="button">View Case Study</a>
@@ -79,9 +101,9 @@
     </section>
 
     <section class="logo2">
-      <img src="images/google.svg" class="logo2" alt="googledrive">
-      <img src="images/pinterest.svg" class="logo2" alt="pinterest">
-      <img src="images/dropbox.svg" class="logo2" alt="dropbox">
+      <img src="images/google.png" class="logoimage2" alt="googledrive">
+      <img src="images/pinterest.png" class="logoimage2" alt="pinterest">
+      <img src="images/dropbox.png" class="logoimage2" alt="dropbox">
 
     </section>
 
@@ -107,9 +129,11 @@
         Share
       </p>
       </section>
+      <section class="us-icons">
     <img src="images/inspire.svg" class="icon2" alt="search">
     <img src="images/save.svg" class="icon2" alt="save">
     <img src="images/share.svg" class="icon2" alt="share">
+  </section>
 
     <section class="user-flows">
       <h1>User Flows </h1>
@@ -122,7 +146,8 @@
       <h1>Wireframes </h1>
       <p>The user flows helped me to set up my wireframes so I could visualize how the site would be set up and how it would work.
       </p>
-
+    </section>
+      <section class="wireframe-images">
     <img src="images/wireframesketch.jpg" class="wireframe-sketch"alt="wireframe">
     <img src="images/explorewireframe.png"class="wireframe" alt="wireframe">
     <img src="images/followingwf.png"class="wireframe" alt="wireframe">
@@ -133,22 +158,29 @@
       <h1>Branding</h1>
       <p>While working on the branding I was looking to show loyalty and trust while also being refreshing and friendly. </p>
     </section>
-
+<section class="brandingimages">
+<img src="images/logosketch.png" class="logosketch"alt="logo">
     <img src="images/styleguide.png" class="styleguide" alt="styleguide">
 
+</section>
 
     <section class="prototypes">
       <h1>Prototypes </h1>
       <p> </p>
       </section>
-
+<section class="prototype-images">
+  <section class="prototype-images1">
       <img src="images/landingpage1.png" class="landingpage1" alt="Prototype">
       <img src="images/landingpage2.png"class="landingpage2" alt="Prototype">
       <img src="images/landingpage3.png"class="landingpage3" alt="Prototype">
+</section>
+<section class="prototype-images1">
       <img src="images/search1.png"class="search1" alt="Prototype">
       <img src="images/search2.png"class="search2" alt="Prototype">
       <img src="images/search3.png"class="search3" alt="Prototype">
 
+</section>
+</section>
 
 
 
@@ -157,36 +189,38 @@
       <p>Organizing content: During my first round of testing users had a hard time finding where to save and organize content.  I needed to add the move button to an obvious location.
       </p>
     </section>
+  <section class="usertesting-save">
     <img src="images/Save.png" class="save" alt="Save">
     <img src="images/save2.png" class="save" alt="Save">
-
+  </section>
     <section class="user-testing2">
       <h1>User Testing </h1>
       <p> Cursive Typeface: Users had a hard time reading the cursive when it was anywhere but the logo.  I ended up removing that typeface from everything else.
       </p>
     </section>
-    <img src="images/cursiveexplore.png" alt="Prototype">
-    <img src="images/explorept.png" alt="Prototype">
-
+    <section class="usertesting-explore">
+    <img src="images/cursiveexplore.png" class="explore" alt="Prototype">
+    <img src="images/explorept.png"class="explore" alt="Prototype">
+  </section>
     <section class= "conclusion">
       <h1>Conclusion </H1>
         <p> During the creation of Sweet Home, I found user testing really helpful.  I learned that a lot of designs that I like the look of might not be the most functional or might not be appealing to other people.  I think the User survey was really helpful in starting off the project and deciding what to do, and preference tests and usability tests were really helpful along the way.
           I learned a lot about design in general and what is accepted among the design community.  Overall, I think the most important thing I realized was how important spacing and size and consistency are to help the design look polished and professional.  I needed to seek out a lot of feedback on this project, and I got used to taking all the opinions with a grain of salt and also combining other people’s ideas with my own to make the best product.
         </p>
       </section>
+      <section class="sweethomelogo">
       <img src="images/sweethomelogo.png"class="swlogo" alt="Logo">
-
+    </section>
 
 
       <footer>
-
-        <p> C 2018 Designed and Developed by Leah Coover </p>
-        <img src="images/linkedin.svg" class="contact" alt="linkedin">
-        <img src="images/google.svg" class="contact" alt="google">
-
+        <p class="copyrightinfo"> C 2018 Designed and Developed by Leah Coover </p>
+        <section class="contact-logos">
+        <img src="images/linkedin3.png" class="contact-logo" alt="linkedin">
+        <img src="images/mail.png" class="contact-logo" alt="google">
+      </section>
 
       </footer>
-
     </div>
 </body>
 </html>
