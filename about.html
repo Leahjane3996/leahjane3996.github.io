@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" cotent="width=device-width, initial-scale=1.0">
   <title>Leah Coover</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-
-
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -15,10 +14,31 @@
 
 
   <div class="container">
+    <div class="nav">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="#">Contact</a>
+        <a href="index.html">Home</a>
+      </div>
 
-    <header class="header">
-      <img src="images/hero.png" class="herologo"alt="logo">
-      <img src="images/hamburger.png" class="icon"alt="menu">
+      <span style="font-size:60px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+    </div>
+    <header>
+      <img src="images/Leah Coover.png" class="leahcoover"alt"Leah Coover">
+      <p class="role"> UX Designer - Denver, CO </p>
+      <img src="images/leaf2.png" class ="leaf"alt="leaf">
     </header>
 
     <div class="about-content">
@@ -33,12 +53,12 @@ After a suggestion to consider web design and extensive research I felt like the
       </div>
     </div>
 
-      <footer>
-
-        <p> C 2018 Designed and Developed by Leah Coover </p>
-        <img src="images/linkedin.svg" class="contact" alt="linkedin">
-        <img src="images/google.svg" class="contact" alt="google">
-
+    <footer>
+      <p class="copyrightinfo"> C 2018 Designed and Developed by Leah Coover </p>
+      <section class="contact-logos">
+      <img src="images/linkedin3.png" class="contact-logo" alt="linkedin">
+      <img src="images/mail.png" class="contact-logo" alt="google">
+    </section>
 
     </footer>
 
