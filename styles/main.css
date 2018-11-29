@@ -1,5 +1,3 @@
-
-
 html {
   font-size: 10px;
 }
@@ -43,7 +41,7 @@ p {
   margin-left: 5rem;
   margin-right: 5rem;
   padding-top:3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   width:75%;
 }
 /*sections*/
@@ -86,18 +84,19 @@ p {
   justify-content: center;
 }
 
-.problem-solution, .competitive-analysis, .user-research,.user-stories, .user-flows, .branding, .prototypes, .conclusion {
+.problem-solution, .competitive-analysis, .user-research,.user-stories, .user-flows, .branding, .prototypes, .conclusion, .wireframes {
   background-color: #F2F2F2;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+
 }
 .prototype-images{
-  display:flex;
+  display:inline-flex;
   justify-content: center;
   margin-left: 10rem;
 }
 
-
+.solution{
+border-top:.5rem solid #F6E1E6;
+}
 .user-personas{
 background-color: #F2F2F2;
 border-top:.5rem solid #F6E1E6;
@@ -112,6 +111,10 @@ border-bottom:.5rem solid #F6E1E6;
 .usertesting-save, .usertesting-explore{
   display:flex;
   justify-content: space-around;
+}
+.wireframe-images{
+  display:inline-flex;
+  flex-wrap: wrap;
 }
 .cards {
     /* Add shadows to create the "card" effect */
@@ -240,7 +243,8 @@ margin-right: auto;
 .leaf{
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 25%;
+    height:8%;
     object-fit: contain;
     margin-top: 0;
     padding: 0;
@@ -248,7 +252,8 @@ margin-right: auto;
 }
 .leahcoover{
   justify-content: center;
-  width: 65%;
+  width: 50%;
+  height:28%;
   padding-bottom: 2rem;
   border-bottom: solid black;
   border-width: thin;
@@ -274,11 +279,7 @@ margin-right: auto;
 }
 
 .logosketch{
-  border-top:.5rem solid #F6E1E6;
-  border-bottom:.5rem solid #F6E1E6;
-  display:flex;
-  object-fit: scale-down;
-  transform:rotate(90);
+  border:.5rem solid #F6E1E6;
 }
 
 
@@ -305,13 +306,13 @@ margin-right: auto;
 }
 
 .tools{
-  width: 100%;
-  height:30%;
+width:100%;
+height:50rem;
   border-top:.5rem solid #F6E1E6;
   border-bottom:.5rem solid #F6E1E6;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
   object-fit: scale-down;
+
+
 }
 .userflowpic{
   margin-top: 10px;
@@ -320,14 +321,17 @@ margin-right: auto;
 }
 
 .wireframe-sketch{
-  border-top:.5rem solid #F6E1E6;
-  border-bottom:.5rem solid #F6E1E6;
-  height: 40%;
-  object-fit: contain;
+  border:.5rem solid #F6E1E6;
+
+  height: 50rem;
+  width:50%;
+
 }
 .wireframe{
 
-  border-bottom:.5rem solid #F6E1E6;
+  border:.5rem solid #F6E1E6;
+  height:50rem;
+  width:50%;
 }
 
 
@@ -343,22 +347,41 @@ margin-right: auto;
 }
 
 
-  /*for desktop*/
-  @media only screen and (min-width: 800px) {
-    .content{
-      display:flex;
-    }
-    .content1{
-      width:40%;
-      display:inline-block;
-      border-bottom:.5rem solid #F6E1E6;
-      border-right: .5rem solid #F6E1E6;
-    }
-    .hshimage1{
-      width:60%;
-      height:100%;
-      display:inline-block;
-      
+/*for desktop*/
+@media screen and (min-device-width: 800px) {
+.content {
+  display: inline-flex;
+}
 
-    }
+.content1 {
+  width: 40%;
+  border-bottom: .5rem solid #F6E1E6;
+  border-right: .5rem solid #F6E1E6;
+}
+
+.hshimage1 {
+  width: 60%;
+  height: 100%;
+  border-top:none;
+
+}
+.about-content{
+     background-color: #F6E1E6;
+     display:flex;
+
+   }
+   .design-roles{
+     display:inline-flex;
+   }
+   .cards{
+     width:30%;
+   }
+   .user-personas-images{
+     display:inline-flex;
+   }
+   .persona{
+     width:45%;
+     margin: 2rem;
+   }
+
 }
