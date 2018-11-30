@@ -10,68 +10,68 @@ img{
 
 
 h1{
-  font-size: 4rem;
-  line-height: 7rem;
+  font-size: 2rem;
   font-family: 'Poiret One', cursive;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-top: 10rem;
-  padding-top: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 3rem;
+  margin-bottom:1rem;
+
+
 }
 
 
 header{
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
   border-bottom: .5rem solid #F6E1E6;
 }
 
 footer {
-  display:flex;
+  display:inline-flex;
+  flex-wrap: wrap;
   background-color: #F6E1E6;
-  padding-right: 5rem;
 }
 
 p {
+
   font-size: 1.6rem;
-  line-height: 7rem;
+  line-height: 5rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  padding-top:3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   padding-bottom: 3rem;
-  width:75%;
+
 }
+
 /*sections*/
 .brandingimages{
-  margin-left: 1rem;
-  margin-right: 1rem;
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .copyrightinfo {
-  margin-top: 11rem;
-  margin-bottom: 5rem;
-  display:flex;
-  justify-content: flex-end;
+padding-top:3rem;
 }
+
 .logo2{
   display: flex;
   justify-content: space-around;
 }
 .nav{
-  padding:5rem;
+  padding:2rem;
 }
 .role{
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   padding-top: 0;
   margin-top:0;
   margin-bottom: 0;
+  padding-bottom:0;
+  line-height: 3rem;
 }
 .sweethomelogo{
   display: flex;
@@ -84,33 +84,47 @@ p {
   justify-content: center;
 }
 
-.problem-solution, .competitive-analysis, .user-research,.user-stories, .user-flows, .branding, .prototypes, .conclusion, .wireframes {
-  background-color: #F2F2F2;
+.problem-solution, .competitive-analysis, .user-research,.user-stories, .user-flows, .branding, .prototypes, .conclusion, .wireframes, .prototypes {
+  background-color: #f6f5f3;
+  padding-top: 3rem;
 
+}
+.prototypes{
+  padding-bottom: 3rem;
 }
 .prototype-images{
+  padding-top:3rem;
   display:inline-flex;
   justify-content: center;
-  margin-left: 10rem;
+  margin-left: 3rem;
 }
+.prototype-images1{
+  width:50%;
+  padding:1rem;
 
+}
+.prototype-images2{
+  width:45%;
+  padding:1rem;
+}
 .solution{
 border-top:.5rem solid #F6E1E6;
 }
 .user-personas{
-background-color: #F2F2F2;
+background-color: #f6f5f3;
 border-top:.5rem solid #F6E1E6;
 border-bottom:.5rem solid #F6E1E6;
 }
 .user-testing, .user-testing2{
-  background-color: #F2F2F2;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  background-color: #f6f5f3;
+  padding-top:3rem;
 
 }
 .usertesting-save, .usertesting-explore{
   display:flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  padding-top:3rem;
 }
 .wireframe-images{
   display:inline-flex;
@@ -121,7 +135,7 @@ border-bottom:.5rem solid #F6E1E6;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
       background-color: #F6E1E6;
-      width: 50%;
+      width: 60%;
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       font-size: 1.6rem;
@@ -133,9 +147,10 @@ border-bottom:.5rem solid #F6E1E6;
 .design-roles{
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10rem;
+  margin-top: 3rem;
   justify-content: center;
 }
+
 
 
 /*buttons dropdowns*/
@@ -152,8 +167,8 @@ border-bottom:.5rem solid #F6E1E6;
     font-weight: 300;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    margin-left: 5rem;
-    margin-bottom: 10rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
 }
 .button:hover {
     background-color: white;
@@ -179,7 +194,7 @@ border-bottom:.5rem solid #F6E1E6;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -213,21 +228,22 @@ border-bottom:.5rem solid #F6E1E6;
 
 
 .footerlogo{
-margin-top: 10rem;
 position: relative;
-top:12rem;
-display: block;
+top:15rem;
+left:6rem;
+display:block;
 margin-left: auto;
 margin-right: auto;
+
 }
 
 .hshimage {
   width: 100%;
   border-top:.5rem solid #F6E1E6;
   border-bottom:.5rem solid #F6E1E6;
-  display: flex;
-  display:inline-block;
+
 }
+
 .icon {
   margin-right: 5rem;
   height:10rem;
@@ -241,45 +257,43 @@ margin-right: auto;
 }
 
 .leaf{
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    height:8%;
-    object-fit: contain;
-    margin-top: 0;
-    padding: 0;
-    object-position: top;
+    width: 40%;
+  height:8%;
+
 }
 .leahcoover{
   justify-content: center;
-  width: 50%;
+  width: 65%;
   height:28%;
-  padding-bottom: 2rem;
-  border-bottom: solid black;
-  border-width: thin;
+  padding-bottom: 1rem;
+  border-bottom: solid #f6f5f3;
+  border-width:thin;
 }
 
 .leahcoover2{
-  width:25%;
+  width:35%;
   display: flex;
   align-self: flex-start;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   padding-top: 2rem;
-  margin-left: 65%;
+  margin-left: 60%;
 }
 
 .logoimage2{
-  height: 20rem;
-  width: 20rem;
+  height: 10rem;
+  width: 10rem;
   display: flex;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: space-around;
 }
 
 .logosketch{
-  border:.5rem solid #F6E1E6;
+  border-top:.5rem solid #F6E1E6;
+  border-bottom:.5rem solid #F6E1E6;
+  width:100%;
+  height:40%;
 }
 
 
@@ -291,18 +305,13 @@ margin-right: auto;
 }
 
 .save, .save2, .explore{
-  width:45%;
-  border: .5rem solid black;
-  border-width: thin;
+  width:100%;
+  height:50%;
 }
-.search1, .search2, .search3,.landingpage1, .landingpage2,.landingpage3 {
-  padding: 5rem;
-
-}
-
 .styleguide{
-  margin-top: 10rem;
   width: 100%;
+  height:75%;
+  border-bottom:.5rem solid #F6E1E6;
 }
 
 .tools{
@@ -322,25 +331,26 @@ height:50rem;
 
 .wireframe-sketch{
   border:.5rem solid #F6E1E6;
-
-  height: 50rem;
-  width:50%;
-
+  width:100%;
+  height:75%;
 }
-.wireframe{
-
-  border:.5rem solid #F6E1E6;
-  height:50rem;
-  width:50%;
+.wireframe1, .wireframe2, .wireframe3{
+  width:100%;
+  height:75%;
+  border-bottom:.5rem solid #F6E1E6;
+  border-left:.5rem solid #F6E1E6;
+  border-right:.5rem solid #F6E1E6;
 }
 
-
+.swlogo{
+  padding-top:3rem;
+}
 
 .contact-logo{
   width:10%;
-  padding-top: 15rem;
-  padding-bottom: 5rem;
-  padding-right: .5rem;
+  padding: .25rem;
+  float:right;
+  padding-top:1rem;
 }
 .container > * {
   flex: 1 1 auto;
@@ -349,6 +359,31 @@ height:50rem;
 
 /*for desktop*/
 @media screen and (min-device-width: 800px) {
+  .header{
+display:inline-flex;
+  }
+  .projectheader{
+    width:100%;
+  }
+  .leahcoover2{
+    width:30%;
+    height:20%;
+  }
+
+  .leahcoover{
+
+    width: 30%;
+
+  }
+  .role{
+
+    width:55%;
+  }
+  .leaf{
+    width:15%;
+    height:15%;
+
+  }
 .content {
   display: inline-flex;
 }
@@ -362,7 +397,9 @@ height:50rem;
 .hshimage1 {
   width: 60%;
   height: 100%;
-  border-top:none;
+  border: none;
+}
+.footer{
 
 }
 .about-content{
@@ -383,5 +420,52 @@ height:50rem;
      width:45%;
      margin: 2rem;
    }
+.wireframe-images{
+  display:inline-flex;
 
+}
+.wireframe-sketch{
+  width:50%;
+  height: 50rem;
+  border:  .5rem solid #F6E1E6;
+}
+
+.wireframe1, .wireframe2, .wireframe3{
+  width:50%;
+  height:50rem;
+border-right:  .5rem solid #F6E1E6;
+
+}
+.wireframe1{
+  border-left: none;
+  border-top: .5rem solid #F6E1E6;
+}
+.wireframe2{
+  border-right: none;
+}
+.prototypeimages{
+  display:inline-flex;
+}
+.prototype-images1{
+  width:48%;
+
+}
+.prototype-images2{
+width:48%;
+
+}
+.landingpage1, .landingpage2,.landingpage3, .search1, .search2, .search3 {
+  width:80%;
+  padding:1rem;
+}
+.save{
+  width:48%;
+}
+.explore{
+  width:48%;
+}
+.design-roles{
+  width:100%;
+
+}
 }
