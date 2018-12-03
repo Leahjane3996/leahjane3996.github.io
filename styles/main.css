@@ -396,13 +396,23 @@ border-bottom: none;
 footer{
 
 }
-
+footer.a{
+  background-color: #f6f5f3;
+}
 /*sections*/
 
 .about-content{
      display:flex;
-     margin-right: 20rem;
+     background-color: #F6E1E6;
+
    }
+.about-content1{
+width:50%;
+padding-top: 12rem;
+}
+.about-image{
+  width:40%;
+}
 
  .cards{
         width:30%;
@@ -418,9 +428,6 @@ border-top: .5rem solid #F6E1E6;
 border-right: .5rem solid #F6E1E6;
 border-bottom: .5rem solid #F6E1E6;
 }
-
-
-
 
 .design-roles{
      display:inline-flex;
