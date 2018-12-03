@@ -376,12 +376,7 @@ margin-left: 26.5%;
 margin-right: 26.5%;
 border-bottom: none;
 }
-footer{
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: flex-end;
-}
+
 
 /*sections*/
 
@@ -407,7 +402,7 @@ border-bottom: .5rem solid #F6E1E6;
 
 .copyrightinfo{
 
-  display: inline-flex;
+text-align: left;
 }
 
 
@@ -428,8 +423,10 @@ width:100%;
 
 /*images*/
 .contact-logo{
-  float:left;
-  margin-left:3rem;
+float:right;
+width:5%;
+height:5%;
+padding-right: 1rem;
 }
 .footerlogo{
 position: absolute;
