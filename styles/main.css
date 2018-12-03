@@ -30,9 +30,13 @@ header{
 
 footer {
   display:inline-flex;
-  flex-wrap: wrap;
   background-color: #F6E1E6;
+  justify-content: center;
+  padding-top: 5rem;
+
+
 }
+
 
 p {
 
@@ -47,6 +51,13 @@ p {
 }
 
 /*sections*/
+.aboutheader{
+  text-align: center;
+  width:100%;
+
+
+
+}
 .problem-solution, .competitive-analysis, .user-research,.user-stories, .user-flows, .branding, .prototypes, .conclusion, .wireframes, .prototypes {
   background-color: #f6f5f3;
   padding-top: 3rem;
@@ -71,11 +82,10 @@ p {
       margin:2rem;
       display: inline-block;
     }
-
-.copyrightinfo {
-padding-top:3rem;
-text-align: right;
+.container{
+  max-width: 1000px;
 }
+
 .design-roles{
   display: flex;
   flex-wrap: wrap;
@@ -93,8 +103,10 @@ text-align: right;
   padding:2rem;
 }
 .projectheader{
- display:inline-flex;
+ display:flex;
   justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: .2rem solid #F6E1E6;
 }
 .prototypes{
   padding-bottom: 3rem;
@@ -108,7 +120,6 @@ text-align: right;
 .prototype-images1, .prototype-images2{
   width:50%;
   padding:1rem;
-
 }
 
 .role{
@@ -228,9 +239,7 @@ padding-top: 3rem;
 
 .contact-logo{
   width:10%;
-  padding: .25rem;
-  float:right;
-  padding-top:1rem;
+
 }
 .container > * {
   flex: 1 1 auto;
@@ -238,17 +247,12 @@ padding-top: 3rem;
 
 .footerlogo{
 position: absolute;
-top:-4rem;
-left:16rem;
-
-
-
+top:-5rem;
+left:22rem;
 }
 
 .hshimage {
-
   border-top:.5rem solid #F6E1E6;
-
 }
 
 .icon {
@@ -256,7 +260,6 @@ left:16rem;
   height:10rem;
   width:8rem;
   align-self: flex-end;
-
 }
 .icon2{
   height: 10rem;
@@ -264,13 +267,12 @@ left:16rem;
 }
 
 .leaf{
-    width: 40%;
+  width: 40%;
   height:8%;
-
 }
 .leaf2{
-  width:20%;
-  height:4%;
+  width:10%;
+  height:2%;
   align-self: center;
 }
 .leahcoover{
@@ -363,9 +365,7 @@ height:50rem;
 
 /*for desktop*/
 @media screen and (min-width: 800px) {
-p{
-  width:60%;
-}
+
 header{
 display: flex;
 flex-wrap: wrap;
@@ -376,16 +376,26 @@ margin-left: 26.5%;
 margin-right: 26.5%;
 border-bottom: none;
 }
-.projectheader{
-border-bottom: .5rem solid #F6E1E6;
+footer{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: flex-end;
 }
 
+/*sections*/
 
+.about-content{
+     display:flex;
+     margin-right: 20rem;
+   }
 
+ .cards{
+        width:30%;
+      }
 
 .content {
   display: inline-flex;
-
 }
 
 .content1 {
@@ -393,38 +403,73 @@ width: 40%;
 border-top: .5rem solid #F6E1E6;
 border-right: .5rem solid #F6E1E6;
 border-bottom: .5rem solid #F6E1E6;
-
 }
 
+.copyrightinfo{
 
-.hshimage1 {
-  width: 60%;
-  border-bottom: .5rem solid #F6E1E6;
-
+  display: inline-flex;
 }
-footer{
-width:100%
-}
-.about-content{
-     display:flex;
-     margin-right: 20rem;
-   }
 
 
 .design-roles{
      display:inline-flex;
+     width:100%;
    }
-.cards{
-     width:30%;
+.explore{
+     width:48%;
+   }
+.projectheader{
+border-bottom: .5rem solid #F6E1E6;
+width:100%;
+}
+.role{
+  width: 60%;
+}
+
+/*images*/
+.contact-logo{
+  float:left;
+  margin-left:3rem;
+}
+.footerlogo{
+position: absolute;
+top:-6rem;
+left:64rem;
+}
+.hshimage1 {
+  width: 60%;
+  border-bottom: .5rem solid #F6E1E6;
+}
+.indexlogo{
+  position:relative;
+}
+.landingpage1, .landingpage2,.landingpage3, .search1, .search2, .search3 {
+  width:80%;
+  padding:1rem;
+}
+.persona{
+     width:45%;
+     margin: 2rem;
+   }
+.prototypeimages{
+     display:inline-flex;
+   }
+.prototype-images1{
+     width:48%;
+
+   }
+.prototype-images2{
+   width:48%;
+
+   }
+
+.save{
+     width:48%;
    }
 .user-personas-images{
      display:inline-flex;
    }
 
-.persona{
-     width:45%;
-     margin: 2rem;
-   }
 .wireframe-images{
   display:inline-flex;
 
@@ -447,38 +492,6 @@ border-right:  .5rem solid #F6E1E6;
 }
 .wireframe2{
   border-right: none;
-}
-.prototypeimages{
-  display:inline-flex;
-}
-.prototype-images1{
-  width:48%;
-
-}
-.prototype-images2{
-width:48%;
-
-}
-.landingpage1, .landingpage2,.landingpage3, .search1, .search2, .search3 {
-  width:80%;
-  padding:1rem;
-}
-.save{
-  width:48%;
-}
-.explore{
-  width:48%;
-}
-.design-roles{
-  width:100%;
-
-}
-.copyrightinfo{
-  width:100%;
-}
-.contact-logo{
-  float:left;
-  margin-left:3rem;
 }
 
 }
