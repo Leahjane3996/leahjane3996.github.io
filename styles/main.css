@@ -29,12 +29,8 @@ header{
 }
 
 footer {
-  display:inline-flex;
   background-color: #F6E1E6;
-  justify-content: center;
   padding-top: 5rem;
-
-
 }
 
 
@@ -47,7 +43,24 @@ p {
   margin-left: 3rem;
   margin-right: 3rem;
   padding-bottom: 3rem;
+  max-width: 1000px;
 
+}
+ul.a {
+  margin-left:5rem;
+
+    font-size: 1.6rem;
+    line-height: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+list-style-type: none;
+padding: 0;
+
+
+}
+li.a{
+background: url('/images/bullet.png') no-repeat left top;
+padding-left:3rem;
 }
 
 /*sections*/
@@ -82,10 +95,11 @@ p {
       margin:2rem;
       display: inline-block;
     }
-.container{
-  max-width: 1200px;
-}
 
+.copyrightinfo{
+
+text-align: left;
+}
 .design-roles{
   display: flex;
   flex-wrap: wrap;
@@ -238,8 +252,11 @@ padding-top: 3rem;
 /*images*/
 
 .contact-logo{
-  width:10%;
-
+float:right;
+width:10%;
+height:10%;
+padding-right: 1rem;
+background-color: #F6E1E6;
 }
 .container > * {
   flex: 1 1 auto;
@@ -376,7 +393,9 @@ margin-left: 26.5%;
 margin-right: 26.5%;
 border-bottom: none;
 }
+footer{
 
+}
 
 /*sections*/
 
@@ -400,10 +419,7 @@ border-right: .5rem solid #F6E1E6;
 border-bottom: .5rem solid #F6E1E6;
 }
 
-.copyrightinfo{
 
-text-align: left;
-}
 
 
 .design-roles{
@@ -413,6 +429,7 @@ text-align: left;
 .explore{
      width:48%;
    }
+
 .projectheader{
 border-bottom: .5rem solid #F6E1E6;
 width:100%;
