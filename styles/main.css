@@ -67,9 +67,12 @@ padding-left:3rem;
 
 /*sections*/
 
+.aboutcontent{
+  padding-top: 15%;
+}
 .aboutheader{
   text-align: center;
-  width:100%;
+  padding-top:15%;
 }
 .about-image{
   padding-top: 15%;
