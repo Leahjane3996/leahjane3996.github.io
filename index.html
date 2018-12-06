@@ -24,34 +24,32 @@
 
 
   <div class="container">
-    <div class="nav">
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="about.html">About</a>
-        <a href="project.html">Projects</a>
-        <a href="index.html">Home</a>
-      </div>
 
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-      </script>
-    </div>
+    <section class="navigation">
+  <a href="index.html" class="logo"><img src="images/leahcoover2.png" class="logo" alt=leaf></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+    </ul>
+  </section>
     <header>
 
 
-      <img src="images/leahcoover2.png" class="leahcoover"alt"Leah Coover">
-
-      <p class="role"> UX Designer - Denver, CO </p>
+<h1 class="indexheader"> Hi.  I'm Leah, Denver based designer who brings efficiency and simplicity to the web.</h1>
       <img src="images/leaf2.png" class ="leaf"alt="leaf">
+
     </header>
+    <div class="h2">
+      <a data-scroll href="#full">
+        <div class="arrow"></div>
+      </a>
+    </div>
+    <div id="full"></div>
+
 
     <section class="content">
       <div class="content1">
@@ -71,7 +69,7 @@
 
 
     <footer>
-      
+
       <section class="contact-logos">
         <a href="[www.linkedin.com/in/leahcoover]"><img src="images/linkedin3.png" class="contact-logo" alt="linkedin"></a>
           <a href="[mailto:ljoberh@gmail.com]"><img src="images/mail.png" class="contact-logo" alt="google"></a>

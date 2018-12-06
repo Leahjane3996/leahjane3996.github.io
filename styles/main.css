@@ -15,7 +15,7 @@ h1{
   margin-left: 3rem;
   margin-right: 3rem;
   margin-top: 3rem;
-  margin-bottom:1rem;
+  margin-bottom:2rem;
 
 
 }
@@ -26,6 +26,8 @@ header{
   flex-wrap: wrap;
   justify-content: center;
   border-bottom: .5rem solid #F6E1E6;
+  padding-top: 15%;
+  text-align: center;
 }
 
 footer {
@@ -64,12 +66,13 @@ padding-left:3rem;
 }
 
 /*sections*/
+
 .aboutheader{
   text-align: center;
   width:100%;
-
-
-
+}
+.about-image{
+  padding-top: 15%;
 }
 .problem-solution, .competitive-analysis, .user-research,.user-stories, .user-flows, .branding, .prototypes, .conclusion, .wireframes, .prototypes {
   background-color: #f6f5f3;
@@ -96,10 +99,14 @@ padding-left:3rem;
       display: inline-block;
     }
 
+.content-project{
+  padding-top: 15%;
+}
 .copyrightinfo{
 
 text-align: left;
 }
+
 .design-roles{
   display: flex;
   flex-wrap: wrap;
@@ -180,6 +187,30 @@ padding-top: 3rem;
 
 
 /*buttons dropdowns*/
+.arrow {
+
+  box-sizing: border-box;
+  height: 2vw;
+  width: 2vw;
+  border-style: solid;
+  border-color: #F6E1E6;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+.h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+padding-bottom: 3rem;
+}
+
 
 .button {
     background-color: #F6E1E6;
@@ -201,49 +232,147 @@ padding-top: 3rem;
     color: #F6E1E6;
   }
 
-  /* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #F9ECEF; /* pink*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+
+
+
+/* header */
+
+.navigation {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  height:10%;
+  z-index: 3;
 }
 
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
+.navigation li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+
 }
 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+.navigation li a:hover,
+.navigation .menu-btn:hover {
+  background-color: #f4f4f4;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+.navigation .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.logo{
+  width:40%;
+}
+
+/* menu */
+
+.navigation .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.navigation .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.navigation .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.navigation .menu-icon .navicon:before,
+.navigation .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.navigation .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.navigation .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.navigation .menu-btn {
+  display: none;
+}
+
+.navigation .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .navigation li {
+    float: left;
+  }
+  .navigation li a {
+    padding: 20px 30px;
+  }
+  .navigation .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .navigation .menu-icon {
+    display: none;
+  }
 }
 
 
@@ -307,8 +436,11 @@ left:15rem;
   align-self: flex-start;
   padding-bottom: 1rem;
   padding-top: 2rem;
-  margin-left: 60%;
+    margin-left: 60%;
+
 }
+
+
 
 .logoimage2{
   height: 5rem;
@@ -382,7 +514,9 @@ height:50rem;
 
 /*for desktop*/
 @media screen and (min-width: 800px) {
-
+h1{
+  font-size: 4rem;
+}
 header{
 display: flex;
 flex-wrap: wrap;
@@ -396,19 +530,21 @@ border-bottom: none;
 footer{
 
 }
-footer.a{
-  background-color: #f6f5f3;
+
+p{
+  font-size: 2rem;
 }
 /*sections*/
 
 .about-content{
      display:flex;
-     background-color: #F6E1E6;
-
    }
+
 .about-content1{
 width:50%;
 padding-top: 12rem;
+padding-left: 4rem;
+padding-right: 4rem;
 }
 .about-image{
   width:40%;
@@ -448,14 +584,14 @@ width:100%;
 /*images*/
 .contact-logo{
 float:right;
-width:5%;
-height:5%;
+width:3%;
+height:3%;
 padding-right: 1rem;
 }
 .footerlogo{
 position: absolute;
-top:-6rem;
-left:48rem;
+top:centered;
+left:50%;
 }
 .hshimage1 {
   width: 60%;
@@ -467,6 +603,9 @@ left:48rem;
 .landingpage1, .landingpage2,.landingpage3, .search1, .search2, .search3 {
   width:80%;
   padding:1rem;
+}
+.logo{
+
 }
 .persona{
      width:45%;
