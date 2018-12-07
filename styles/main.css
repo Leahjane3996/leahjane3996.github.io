@@ -126,6 +126,7 @@ text-align: left;
 .indexlogo{
   position: relative;
 }
+
 .logo2{
   display: flex;
   justify-content: space-around;
@@ -483,6 +484,7 @@ left:15rem;
   margin-bottom: 3rem;
 }
 
+
 .logoimage2{
   height: 5rem;
   width: 5rem;
@@ -664,6 +666,7 @@ left:50%;
   border-width: thin;
   width:25%;
   margin:2rem;
+}
 
 .logo{
 width:40%;
