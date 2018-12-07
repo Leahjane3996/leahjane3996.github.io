@@ -17,7 +17,6 @@ h1{
   margin-top: 3rem;
   margin-bottom:2rem;
 
-
 }
 
 
@@ -28,6 +27,10 @@ header{
   border-bottom: .5rem solid #F6E1E6;
   padding-top: 15%;
   text-align: center;
+  width:100%;
+}
+header.a{
+  border-bottom: none;
 }
 
 footer {
@@ -48,6 +51,9 @@ p {
   max-width: 1000px;
 
 }
+p.b{
+  padding-top: 3rem;
+}
 ul.a {
   margin-left:5rem;
 
@@ -55,8 +61,8 @@ ul.a {
     line-height: 3rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-list-style-type: none;
-padding: 0;
+    list-style-type: none;
+    padding: 0;
 
 
 }
@@ -67,17 +73,15 @@ padding-left:3rem;
 
 /*sections*/
 
-.aboutcontent{
-  padding-top: 15%;
-}
+
 .aboutheader{
   text-align: center;
-  padding-top:15%;
+
 }
 .about-image{
   padding-top: 15%;
 }
-.problem-solution, .competitive-analysis, .user-research,.user-stories, .user-flows, .branding, .prototypes, .conclusion, .wireframes, .prototypes {
+.problem-solution, .competitive-analysis, .user-research,.user-stories, .user-flows, .branding, .prototypes, .conclusion, .wireframes,.prototypes  {
   background-color: #f6f5f3;
   padding-top: 3rem;
 
@@ -85,7 +89,7 @@ padding-left:3rem;
 .brandingimages{
   display:flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 .cards {
     /* Add shadows to create the "card" effect */
@@ -100,6 +104,9 @@ padding-left:3rem;
       padding: 2rem;
       margin:2rem;
       display: inline-block;
+    }
+    .cards h1{
+    margin-top: 0;
     }
 
 .content-project{
@@ -136,15 +143,11 @@ text-align: left;
   padding-bottom: 3rem;
 }
 .prototype-images{
-  padding-top:3rem;
-  display:inline-flex;
-  justify-content: center;
-  margin-left: 3rem;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.prototype-images1, .prototype-images2{
-  width:50%;
-  padding:1rem;
-}
+
 
 .role{
   text-align: center;
@@ -165,6 +168,11 @@ text-align: left;
 background-color: #f6f5f3;
 padding-top: 3rem;
 }
+.user-personas-images{
+  padding:3rem;
+  margin:3rem;
+
+}
 .us-icons{
   display: flex;
   justify-content: center;
@@ -179,11 +187,14 @@ padding-top: 3rem;
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top:3rem;
+  padding:3rem;
 }
 .wireframe-images{
-  display:inline-flex;
-  flex-wrap: wrap;
+display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+
 }
 
 
@@ -399,6 +410,14 @@ position: absolute;
 top:-5rem;
 left:15rem;
 }
+.graph{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.headshot{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
 
 .hshimage {
   border-top:.5rem solid #F6E1E6;
@@ -413,6 +432,13 @@ left:15rem;
 .icon2{
   height: 10rem;
   width: 10rem;
+}
+.landingpage1, .landingpage2, .landingpage3, .search1, .search2, .search3{
+  border: solid #f6f5f3;
+  border-width: thin;
+  width:25%;
+  margin:2rem;
+
 }
 
 .leaf{
@@ -443,7 +469,13 @@ left:15rem;
 
 }
 
-
+.logo{
+  width:45%;
+  height:45%;
+  border: solid #f6f5f3;
+  border-width: thin;
+  margin-bottom: 3rem;
+}
 
 .logoimage2{
   height: 5rem;
@@ -455,26 +487,22 @@ left:15rem;
   justify-content: space-around;
 }
 
-.logosketch{
-  border-top:.5rem solid #F6E1E6;
-  border-bottom:.5rem solid #F6E1E6;
-  width:100%;
-  height:40%;
-}
 
-.persona{
-  width: 100%;
-  height: 100%
-}
+
+
 
 .save, .save2, .explore{
   width:100%;
   height:50%;
+  border: solid #f6f5f3;
+  border-width: thin;
 }
 .styleguide{
-  width: 100%;
-  height:75%;
-  border-bottom:.5rem solid #F6E1E6;
+  width: 60%;
+  height:50%;
+  margin:3%;
+
+
 }
 .swlogo{
   padding-top:3rem;
@@ -486,6 +514,7 @@ height:50rem;
   object-fit: scale-down;
   padding-top: 3rem;
   padding-bottom: 3rem;
+
 }
 .userflowpic{
   width:75%;
@@ -496,19 +525,17 @@ height:50rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+.wireframe-sketch, .wireframe1, .wireframe2, .wireframe3{
+  width:40%;
+  height:30%;
+  margin:2rem;
+  border: solid #f6f5f3;
 
-.wireframe-sketch{
-  border:.5rem solid #F6E1E6;
-  width:100%;
-  height:75%;
+
+
 }
-.wireframe1, .wireframe2, .wireframe3{
-  width:100%;
-  height:75%;
-  border-bottom:.5rem solid #F6E1E6;
-  border-left:.5rem solid #F6E1E6;
-  border-right:.5rem solid #F6E1E6;
-}
+
+
 
 
 
@@ -519,6 +546,8 @@ height:50rem;
 @media screen and (min-width: 800px) {
 h1{
   font-size: 4rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 header{
 display: flex;
@@ -536,6 +565,9 @@ footer{
 
 p{
   font-size: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  max-width: 700px;
 }
 /*sections*/
 
@@ -583,6 +615,11 @@ width:100%;
 .role{
   width: 60%;
 }
+.user-personas-images{
+  display:flex;
+  flex-wrap:wrap;
+}
+
 
 /*images*/
 .contact-logo{
@@ -591,10 +628,18 @@ width:3%;
 height:3%;
 padding-right: 1rem;
 }
+.explore{
+  border: solid #f6f5f3;
+  border-width: thin;
+  width:40%;
+}
 .footerlogo{
 position: absolute;
 top:centered;
 left:50%;
+}
+.hshimage{
+
 }
 .hshimage1 {
   width: 60%;
@@ -603,56 +648,36 @@ left:50%;
 .indexlogo{
   position:relative;
 }
-.landingpage1, .landingpage2,.landingpage3, .search1, .search2, .search3 {
-  width:80%;
-  padding:1rem;
-}
+
 .logo{
 width:40%;
 }
+.logohsh{
+  width:40%;
+  height:20%;
+}
 .persona{
-     width:45%;
-     margin: 2rem;
-   }
-.prototypeimages{
-     display:inline-flex;
-   }
-.prototype-images1{
-     width:48%;
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:45%;
+  height:50%;
+}
 
-   }
-.prototype-images2{
-   width:48%;
-
-   }
 
 .save{
-     width:48%;
+     width:40%;
+     border: solid #f6f5f3;
+     border-width: thin;
+   }
+
+   .userflowpic{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
    }
 .user-personas-images{
      display:inline-flex;
+
    }
-
-.wireframe-images{
-  display:inline-flex;
-
-}
-.wireframe-sketch{
-  width:50%;
-  height: 50rem;
-  border:  .5rem solid #F6E1E6;
-}
-
-.wireframe1, .wireframe2, .wireframe3{
-  width:50%;
-  height:50rem;
-border-right:  .5rem solid #F6E1E6;
-
-}
-.wireframe1{
-  border-left: none;
-  border-top: .5rem solid #F6E1E6;
-}
-.wireframe2{
-  border-right: none;
-}
