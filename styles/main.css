@@ -16,6 +16,7 @@ h1{
   margin-right: 3rem;
   margin-top: 3rem;
   margin-bottom:2rem;
+  line-height: 3rem;
 
 }
 
@@ -112,6 +113,7 @@ padding-left:3rem;
 .content-project{
   padding-top: 15%;
 }
+
 .copyrightinfo{
 
 text-align: left;
@@ -196,9 +198,9 @@ padding-top: 3rem;
   padding:3rem;
 }
 .wireframe-images{
-display:flex;
-flex-wrap: wrap;
-justify-content: space-around;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
 
 }
@@ -228,7 +230,7 @@ justify-content: space-around;
   display: flex;
   align-items: center;
   justify-content: center;
-padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 
@@ -244,8 +246,9 @@ padding-bottom: 3rem;
     font-weight: 300;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    margin-left: 3rem;
+    margin-left: 5rem;
     margin-bottom: 3rem;
+    margin-top:3rem;
 }
 .button:hover {
     background-color: white;
@@ -563,6 +566,7 @@ h1{
   font-size: 4rem;
   margin-left: 5rem;
   margin-right: 5rem;
+  line-height: 5rem;
 }
 header{
 display: flex;
@@ -653,7 +657,9 @@ position: absolute;
 top:centered;
 left:50%;
 }
-
+.headshot{
+  margin-bottom: 5rem;
+}
 .hshimage1 {
   width: 60%;
   border-bottom: .5rem solid #F6E1E6;
