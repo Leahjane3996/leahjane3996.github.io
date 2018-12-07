@@ -164,14 +164,19 @@ text-align: left;
   flex-wrap: wrap;
   justify-content: center;
 }
+.userflowpic{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
 .user-personas{
 background-color: #f6f5f3;
 padding-top: 3rem;
 }
-.user-personas-images{
-  padding:3rem;
-  margin:3rem;
 
+.user-personas-images{
+  display:flex;
+  flex-wrap:wrap;
 }
 .us-icons{
   display: flex;
@@ -436,8 +441,9 @@ left:15rem;
 .landingpage1, .landingpage2, .landingpage3, .search1, .search2, .search3{
   border: solid #f6f5f3;
   border-width: thin;
-  width:25%;
-  margin:2rem;
+  width:28%;
+  margin:1%;
+
 
 }
 
@@ -487,7 +493,14 @@ left:15rem;
   justify-content: space-around;
 }
 
-
+.persona{
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:45%;
+  height:50%;
+}
 
 
 
@@ -638,9 +651,7 @@ position: absolute;
 top:centered;
 left:50%;
 }
-.hshimage{
 
-}
 .hshimage1 {
   width: 60%;
   border-bottom: .5rem solid #F6E1E6;
@@ -648,6 +659,11 @@ left:50%;
 .indexlogo{
   position:relative;
 }
+.landingpage1, .landingpage2, .landingpage3, .search1, .search2, .search3{
+  border: solid #f6f5f3;
+  border-width: thin;
+  width:25%;
+  margin:2rem;
 
 .logo{
 width:40%;
@@ -656,28 +672,11 @@ width:40%;
   width:40%;
   height:20%;
 }
-.persona{
-  margin-top: 2rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:45%;
-  height:50%;
-}
+
 
 
 .save{
      width:40%;
      border: solid #f6f5f3;
      border-width: thin;
-   }
-
-   .userflowpic{
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-   }
-.user-personas-images{
-     display:inline-flex;
-
    }
