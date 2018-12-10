@@ -56,6 +56,14 @@ p {
 p.b{
   padding-top: 3rem;
 }
+h1.indexwork{
+  width:100%;
+  margin:0;
+  font-size: 1.6rem;
+  padding-top: 2rem;
+  padding-bottom:0rem;
+  color:#F4C6D1;
+}
 ul.a {
   margin-left:5rem;
 
@@ -600,8 +608,8 @@ p{
 }
 p.about{
   max-width: 100%;
-
 }
+
 
 /*sections*/
 
@@ -683,6 +691,7 @@ left:50%;
 .indexlogo{
   position:relative;
 }
+
 .landingpage1, .landingpage2, .landingpage3, .search1, .search2, .search3{
   border: solid #f6f5f3;
   border-width: thin;
@@ -697,7 +706,11 @@ width:22rem;
   width:40%;
   height:20%;
 }
-
+.persona{
+  width:35%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
 
 .save{
