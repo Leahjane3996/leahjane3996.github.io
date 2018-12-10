@@ -25,7 +25,7 @@ header{
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-bottom: .5rem solid #F6E1E6;
+
   padding-top: 15%;
   text-align: center;
   width:100%;
@@ -33,6 +33,7 @@ header{
 header.a{
   border-bottom: none;
 }
+
 
 footer {
   background-color: #F6E1E6;
@@ -73,7 +74,9 @@ padding-left:3rem;
 }
 
 /*sections*/
-
+.about-content1{
+  text-align: center;
+}
 
 .aboutheader{
   text-align: center;
@@ -149,6 +152,7 @@ text-align: left;
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
 }
 
 
@@ -215,7 +219,7 @@ padding-top: 3rem;
   height: 2vw;
   width: 2vw;
   border-style: solid;
-  border-color: #F6E1E6;
+  border-color: #F4C6D1;
   border-width: 0px 1px 1px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
@@ -231,6 +235,7 @@ padding-top: 3rem;
   align-items: center;
   justify-content: center;
   padding-bottom: 3rem;
+  border-bottom: .5rem solid #F6E1E6;
 }
 
 
@@ -266,7 +271,7 @@ padding-top: 3rem;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
-  height:10%;
+  height:6rem;
   z-index: 3;
 }
 
@@ -282,10 +287,13 @@ padding-top: 3rem;
   display: block;
   padding: 20px 20px;
   text-decoration: none;
+  color:black;
   font-size: 1.6rem;
-  line-height: 3rem;
+  line-height: 2rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+
+
 
 }
 
@@ -486,7 +494,9 @@ left:15rem;
   border-width: thin;
   margin-bottom: 3rem;
 }
-
+.logo{
+  width:20rem;
+}
 
 .logoimage2{
   height: 5rem;
@@ -588,20 +598,28 @@ p{
   margin-right: 5rem;
   max-width: 700px;
 }
+p.about{
+  max-width: 100%;
+
+}
+
 /*sections*/
 
 .about-content{
      display:flex;
+     flex-wrap: wrap;
+     justify-content: center;
+
    }
 
 .about-content1{
-width:50%;
-padding-top: 12rem;
-padding-left: 4rem;
-padding-right: 4rem;
+width:100%;
 }
+
 .about-image{
-  width:40%;
+  width:60%;
+  margin-top: 0;
+  padding-top: 0;
 }
 
  .cards{
@@ -657,9 +675,7 @@ position: absolute;
 top:centered;
 left:50%;
 }
-.headshot{
-  margin-bottom: 5rem;
-}
+
 .hshimage1 {
   width: 60%;
   border-bottom: .5rem solid #F6E1E6;
@@ -675,7 +691,7 @@ left:50%;
 }
 
 .logo{
-width:40%;
+width:22rem;
 }
 .logohsh{
   width:40%;
