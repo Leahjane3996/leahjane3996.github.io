@@ -90,7 +90,7 @@ padding-left:3rem;
 
   background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/images/headshot1.jpg');
   background-color:#F8F8F8;
-  height: 1000px;
+  height: 900px;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,10 +99,11 @@ padding-left:3rem;
 }
 .about-content1{
   text-align: center;
-  padding-top: 5rem;
+  padding-top:2rem;
   padding-bottom: 30rem;
   color:black;
   font-weight:500;
+  line-height: 2rem;
 
 
 }
@@ -115,9 +116,7 @@ padding-left:3rem;
   padding-top: 5rem;
 
 }
-.about-image{
-  padding-top: 15%;
-}
+
 .problem-solution, .competitive-analysis, .user-research,.user-stories, .user-flows, .branding, .prototypes, .conclusion, .wireframes,.prototypes  {
 
   padding-top: 3rem;
@@ -709,7 +708,9 @@ padding-top: 15rem;
 .explore{
      width:48%;
    }
-
+h1.indexheader{
+  line-height: 5rem;
+}
 .projectheader{
 border-bottom: .5rem solid #F6E1E6;
 width:100%;
