@@ -18,6 +18,8 @@ h1{
   margin-bottom:2rem;
   line-height: 3rem;
 
+
+
 }
 
 
@@ -62,7 +64,7 @@ h1.indexwork{
   font-size: 1.6rem;
   padding-top: 2rem;
   padding-bottom:0rem;
-  color:#F4C6D1;
+
 }
 ul.a {
   margin-left:5rem;
@@ -94,7 +96,7 @@ padding-left:3rem;
   padding-top: 15%;
 }
 .problem-solution, .competitive-analysis, .user-research,.user-stories, .user-flows, .branding, .prototypes, .conclusion, .wireframes,.prototypes  {
-  background-color: #f6f5f3;
+
   padding-top: 3rem;
 
 }
@@ -120,10 +122,10 @@ padding-left:3rem;
     .cards h1{
     margin-top: 0;
     }
+.content2{
 
-.content-project{
-  padding-top: 15%;
 }
+
 
 .copyrightinfo{
 
@@ -179,13 +181,16 @@ text-align: left;
   flex-wrap: wrap;
   justify-content: center;
 }
+.underline{
+  border-bottom:.25rem solid #F6E1E6;
+
+}
 .userflowpic{
 display: block;
 margin-left: auto;
 margin-right: auto;
 }
 .user-personas{
-background-color: #f6f5f3;
 padding-top: 3rem;
 }
 
@@ -199,7 +204,7 @@ padding-top: 3rem;
 }
 
 .user-testing, .user-testing2{
-  background-color: #f6f5f3;
+
   padding-top:3rem;
 
 }
@@ -215,6 +220,9 @@ padding-top: 3rem;
   justify-content: space-around;
 
 
+}
+.problem-solution, .user-research, .user-stories, .wireframes, .prototypes, .conclusion{
+  background-color:#F8F8F8;
 }
 
 
@@ -265,7 +273,7 @@ padding-top: 3rem;
 }
 .button:hover {
     background-color: white;
-    color: #F6E1E6;
+    color: black;
   }
 
 
@@ -636,14 +644,25 @@ width:100%;
 
 .content {
   display: inline-flex;
+
+}
+.content-project {
+  display: inline-flex;
+  padding-top: 5rem;
+
 }
 
-.content1 {
+.content1, .content2 {
 width: 40%;
 border-top: .5rem solid #F6E1E6;
 border-right: .5rem solid #F6E1E6;
 border-bottom: .5rem solid #F6E1E6;
+padding-top: 15rem;
 }
+.content2{
+
+}
+
 
 .design-roles{
      display:inline-flex;
@@ -681,7 +700,7 @@ padding-right: 1rem;
 .footerlogo{
 position: absolute;
 top:centered;
-left:50%;
+left:48%;
 }
 
 .hshimage1 {
