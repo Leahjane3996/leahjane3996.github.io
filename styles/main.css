@@ -145,8 +145,8 @@ padding-left:3rem;
     .cards h1{
     margin-top: 0;
     }
-.content2{
-
+.content1{
+border-top:.25rem solid #F6E1E6;
 }
 
 
@@ -161,6 +161,11 @@ text-align: left;
   margin-top: 3rem;
   justify-content: center;
 }
+
+.indexheader{
+  line-height: 3rem;
+}
+
 .indexlogo{
   position: relative;
 }
@@ -274,7 +279,7 @@ padding-top: 3rem;
   align-items: center;
   justify-content: center;
   padding-bottom: 3rem;
-  border-bottom: .5rem solid #F6E1E6;
+
 }
 
 
