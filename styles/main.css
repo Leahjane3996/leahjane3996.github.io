@@ -483,6 +483,7 @@ li.a{
 }
 
 .hshimage {
+  display: block;
   border-top:.5rem solid #F6E1E6;
 }
 
