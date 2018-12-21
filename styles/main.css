@@ -500,7 +500,7 @@ li.a{
 .landingpage1, .landingpage2, .landingpage3, .search1, .search2, .search3{
   border: solid #f6f5f3;
   border-width: thin;
-  width:28%;
+  width:30%;
   margin:1%;
 
 
@@ -560,7 +560,7 @@ li.a{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:45%;
+  width:75%;
   height:50%;
 }
 
