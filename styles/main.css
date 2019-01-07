@@ -18,6 +18,15 @@ h1{
   margin-bottom:2rem;
   line-height: 2rem;
 }
+h3{
+  font-size:2rem;
+  font-family: 'Poiret One', cursive;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 1rem;
+  margin-bottom:1rem;
+  line-height: 2rem;
+}
 
 
 header{
@@ -36,7 +45,13 @@ header.a{
 
 footer {
   background-color: #F6E1E6;
-  padding-top: 5rem;
+   width: 100%;
+   height:6rem;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   color: black;
+   text-align: center;
 }
 
 
@@ -55,7 +70,9 @@ p {
 p.b{
   padding-top: 3rem;
 }
-
+p.foot{
+  font size:1rem;
+}
 h1.indexwork{
   width:100%;
   margin:0;
@@ -82,28 +99,6 @@ li.a{
 }
 
 /*sections*/
-.about-content{
-
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/images/headshot1.jpg');
-  background-color:#F8F8F8;
-  height: 900px;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-
-}
-.about-content1{
-  text-align: center;
-  padding-top:2rem;
-  padding-bottom: 30rem;
-  color:black;
-  font-weight:500;
-  line-height: 2rem;
-
-
-}
-
 
 
 
@@ -113,10 +108,10 @@ li.a{
 
 }
 
-.problem-solution, .competitive-analysis, .user-research,.user-stories, .user-flows, .branding, .prototypes, .conclusion, .wireframes,.prototypes  {
+ .problem-solution, .competitive-analysis, .user-research, .user-personas, .user-flows, .wireframes, .usablitiytest1, .branding, .prototypes, .user-testing2, .conclusion, .about-content{
 
   padding-top: 3rem;
-
+  text-align: center;
 }
 .brandingimages{
   display:flex;
@@ -136,6 +131,7 @@ li.a{
   padding: 2rem;
   margin:2rem;
   display: inline-block;
+  line-height: 2.5rem;
 }
 .cards h1{
   margin-top: 0;
@@ -150,6 +146,9 @@ li.a{
 .copyrightinfo{
 
   text-align: left;
+  padding-top: 2rem;
+
+
 }
 
 .design-roles{
@@ -168,13 +167,24 @@ li.a{
 }
 
 .logo2{
-  display: flex;
-  justify-content: space-around;
-  max-width: 60%;
-  margin-left: 8rem;
+display: flex;
+  justify-content: space-between;
+  margin-left: 30rem;
+  margin-right: 30rem;
+
+
 }
 .nav{
   padding:2rem;
+}
+.persona12{
+  display:flex;
+
+}
+
+.problem, .solution, .comp-an, .us-re, .us-per, .us-sto, .us-flo, .wf, .ut1, .bran, .proto, .ut2, .con, .about-content1{
+  display: inline-block;
+  text-align: left;
 }
 .projectheader{
   display:flex;
@@ -223,10 +233,7 @@ li.a{
   padding-top: 3rem;
 }
 
-.user-personas-images{
-  display:flex;
-  flex-wrap:wrap;
-}
+
 .us-icons{
   display: flex;
   justify-content: center;
@@ -250,7 +257,7 @@ li.a{
 
 
 }
-.problem-solution, .user-research, .user-stories, .wireframes, .prototypes, .conclusion{
+.problem-solution, .user-research, .user-stories, .wireframes, .branding, .conclusion{
   background-color:#F8F8F8;
 }
 
@@ -462,25 +469,25 @@ li.a{
   height:20px;
   padding-right: 1rem;
 
+
 }
 .container > * {
   flex: 1 1 auto;
 }
 
 .footerlogo{
-  position: absolute;
-  top:-5rem;
-  left:15rem;
+width:10rem;
+height:10rem;
+
 }
 .graph{
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top:2rem;
+  padding-bottom: 2rem;
 }
-.headshot{
 
-}
 
 .hshimage {
   display: block;
@@ -548,20 +555,15 @@ li.a{
 .logoimage2{
   height: 5rem;
   width: 5rem;
-  display: flex;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  display: flex;
-  justify-content: space-around;
+
 }
 
-.persona{
-  margin-top: 2rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:75%;
-  height:50%;
+.persona1, .persona2{
+  width:25%;
+  height:auto;
+
 }
 
 
@@ -664,10 +666,7 @@ li.a{
   h1.indexheader{
     line-height: 5rem;
   }
-  h1.margin, p.margin, p.b, ul.a, .buttonb{
-      margin-left:15rem;
 
-  }
   header{
     display: flex;
     flex-wrap: wrap;
@@ -686,37 +685,10 @@ li.a{
     margin-right: 5rem;
     max-width: 700px;
   }
-  p.about{
-    max-width: 100%;
-  }
+
 
 
   /*sections*/
-
-  .about-content{
-
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/images/headshot1.jpg');
-    background-color:#F8F8F8;
-    height: 1000px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
-  }
-  .about-content1{
-    text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 30rem;
-    color:black;
-    font-weight: bold;
-
-
-  }
-
-
-
-
 
   .cards{
     width:30%;
@@ -734,22 +706,26 @@ li.a{
 
   .content1, .content2 {
     width: 40%;
-    border-top: .5rem solid #F6E1E6;
-    border-right: .5rem solid #F6E1E6;
-    border-bottom: .5rem solid #F6E1E6;
+
     padding-top: 15rem;
+    border: none;
   }
+
 
 
 
   .design-roles{
     display:inline-flex;
     width:100%;
+
   }
+
   .explore{
     width:48%;
   }
-
+  .hshimage{
+    border:none;
+  }
   .projectheader{
     border-bottom: .5rem solid #F6E1E6;
     width:100%;
@@ -761,6 +737,8 @@ li.a{
     display:flex;
     flex-wrap:wrap;
   }
+
+
 
 
   /*images*/
@@ -783,10 +761,11 @@ li.a{
   .headshot{
     width:100%;
   }
+
   .hshimage1 {
     width: 60%;
     height:100%;
-    border-bottom: .5rem solid #F6E1E6;
+
 
   }
   .indexlogo{
@@ -799,6 +778,7 @@ li.a{
     width:30%;
     margin:2rem;
     align-items: center;
+    vertical-align: top;
   }
 
   .logo{
@@ -807,11 +787,6 @@ li.a{
   .logohsh{
     width:40%;
     height:20%;
-  }
-  .persona{
-    width:35%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
   }
 
 
