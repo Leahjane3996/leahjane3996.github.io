@@ -45,13 +45,16 @@ header.a{
 
 footer {
   background-color: #F6E1E6;
+
    width: 100%;
-   height:6rem;
-   position: fixed;
+   right: 0;
    left: 0;
    bottom: 0;
    color: black;
-   text-align: center;
+  display:flex;
+  align-items: center;
+
+
 }
 
 
@@ -69,6 +72,9 @@ p {
 
 p.b{
   padding-top: 3rem;
+}
+p.cr{
+  font-size: 1.2rem;
 }
 p.foot{
   font size:1rem;
@@ -107,8 +113,28 @@ li.a{
   padding-top: 5rem;
 
 }
+.about-content{
+  background-image: url("/images/headshot1.jpg");
+  background-size:cover;
+  height:1100px;
+  background-position: center;
+  background-repeat: no-repeat;
 
- .problem-solution, .competitive-analysis, .user-research, .user-personas, .user-flows, .wireframes, .usablitiytest1, .branding, .prototypes, .user-testing2, .conclusion, .about-content{
+  position: relative;
+
+}
+.about-content1{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  padding-top: 3rem;
+  background-color: white;opacity: .8;
+  width:40%;
+  font-size: 1.3rem;
+
+
+}
+
+ .problem-solution, .competitive-analysis, .user-research, .user-personas, .user-stories, .user-flows, .user-flows-button, .wireframes, .usablitiytest1, .branding, .prototypes, .user-testing2, .conclusion, .about-content{
 
   padding-top: 3rem;
   text-align: center;
@@ -139,14 +165,17 @@ li.a{
 .content1{
   border-top:.25rem solid #F6E1E6;
 }
+.contact-logos{
+  padding-left: 68rem;
+}
 .content-project{
   padding-top: 5rem;
 }
 
 .copyrightinfo{
 
-  text-align: left;
-  padding-top: 2rem;
+text-align: left;
+padding-top: 3rem;
 
 
 }
@@ -182,7 +211,7 @@ display: flex;
 
 }
 
-.problem, .solution, .comp-an, .us-re, .us-per, .us-sto, .us-flo, .wf, .ut1, .bran, .proto, .ut2, .con, .about-content1{
+.problem, .solution, .comp-an, .comp-an2, .comp-an3, .us-re, .us-per, .us-sto, .us-flo, .us-flo2, .wf, .ut1, .bran, .proto, .ut2, .con, .about-content1{
   display: inline-block;
   text-align: left;
 }
@@ -464,20 +493,20 @@ display: flex;
 /*images*/
 
 .contact-logo{
-  float:right;
+
   width:30px;
   height:20px;
-  padding-right: 1rem;
-
 
 }
+
 .container > * {
   flex: 1 1 auto;
 }
 
-.footerlogo{
-width:10rem;
-height:10rem;
+.footerlogo2{
+width:4rem;
+height:4rem;
+margin-left: 3rem;
 
 }
 .graph{
@@ -492,6 +521,7 @@ height:10rem;
 .hshimage {
   display: block;
   border-top:.5rem solid #F6E1E6;
+  padding: 3rem;
 }
 
 .icon {
@@ -742,25 +772,14 @@ height:10rem;
 
 
   /*images*/
-  .contact-logo{
-    float:right;
-    width:45px;
-    height:35px;
-    padding-right: 1rem;
-  }
+
   .explore{
     border: solid #f6f5f3;
     border-width: thin;
     width:40%;
   }
-  .footerlogo{
-    position: absolute;
-    top:centered;
-    left:48%;
-  }
-  .headshot{
-    width:100%;
-  }
+
+
 
   .hshimage1 {
     width: 60%;
