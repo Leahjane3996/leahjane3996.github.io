@@ -26,6 +26,10 @@ h3{
   margin-top: 1rem;
   margin-bottom:1rem;
   line-height: 2rem;
+
+}
+h3.p, p.p {
+  text-align: center;
 }
 
 
@@ -89,7 +93,7 @@ h1.indexwork{
 }
 
 ul.a {
-  margin-left:5rem;
+  margin-left:3rem;
 
   font-size: 1.6rem;
   line-height: 3rem;
@@ -133,17 +137,28 @@ li.a{
 
 
 }
+.brandingimages{
+display: flex;
+flex-wrap: wrap;
+padding-left: 3rem;
+padding-right: 3rem;
+text-align: center;
+}
+.brand{
+  width:25%;
+  padding:5%;
 
- .problem-solution, .competitive-analysis, .user-research, .user-personas, .user-stories, .user-flows, .user-flows-button, .wireframes, .usablitiytest1, .branding, .prototypes, .user-testing2, .conclusion, .about-content{
+
+}
+.colors, .buttons, .icons, .bars, .typography {
+
+}
+ .problem-solution, .competitive-analysis, .user-research, .user-personas, .user-stories, .user-flows, .user-flows-button, .wireframes, .usablitiytest1, .branding, .prototypes, .user-testing2, .conclusion, .about-content, .persona12{
 
   padding-top: 3rem;
   text-align: center;
 }
-.brandingimages{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+
 .cards {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -198,8 +213,7 @@ padding-top: 3rem;
 .logo2{
 display: flex;
   justify-content: space-between;
-  margin-left: 30rem;
-  margin-right: 30rem;
+
 
 
 }
@@ -211,7 +225,7 @@ display: flex;
 
 }
 
-.problem, .solution, .comp-an, .comp-an2, .comp-an3, .us-re, .us-per, .us-sto, .us-flo, .us-flo2, .wf, .ut1, .bran, .proto, .ut2, .con, .about-content1{
+.problem, .solution, .comp-an, .comp-an2, .comp-an3, .us-re, .us-per, .us-sto, .us-flo, .us-flo2, .wf, .ut1, .bran, .proto, .ut2, .con, .about-content1, .user-persona-1, .user-persona-2{
   display: inline-block;
   text-align: left;
 }
@@ -261,11 +275,21 @@ display: flex;
 .user-personas{
   padding-top: 3rem;
 }
+.user-persona-1, .user-persona-2{
+  box-shadow: 0 0 5px #f6f5f3;
+  width:50%;
+  padding-left: 2rem;
+  margin:2rem;
+  padding-bottom:2rem;
+  background-color: #BECFC2;
+
+
+}
 
 
 .us-icons{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .user-testing, .user-testing2{
@@ -286,7 +310,7 @@ display: flex;
 
 
 }
-.problem-solution, .user-research, .user-stories, .wireframes, .branding, .conclusion{
+.problem-solution, .user-research, .user-stories, .wireframes, .branding, .wireframe-images, .user-testing2,.usertesting-explore, .brandingimages{
   background-color:#F8F8F8;
 }
 
@@ -535,10 +559,12 @@ margin-left: 3rem;
   width: 10rem;
 }
 .landingpage1, .landingpage2, .landingpage3, .search1, .search2, .search3{
-  border: solid #f6f5f3;
-  border-width: thin;
+
+
   width:30%;
   margin:1%;
+  box-shadow: 0 0 5px #f6f5f3;
+
 
 
 }
@@ -593,6 +619,9 @@ margin-left: 3rem;
 .persona1, .persona2{
   width:25%;
   height:auto;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -601,8 +630,9 @@ margin-left: 3rem;
 .save, .save2, .explore{
   width:100%;
   height:50%;
-  border: solid #f6f5f3;
-  border-width: thin;
+
+  box-shadow: 0 0 5px #f6f5f3;
+
 }
 .styleguide{
   width: 60%;
@@ -641,45 +671,15 @@ margin-left: 3rem;
   width:40%;
   height:30%;
   margin:2rem;
-  border: solid #f6f5f3;
+
+  box-shadow: 0 0 5px #f6f5f3;
+
 
 
 
 }
 
-/*for tablet*/
-@media only screen and (min-width: 600px) {
-  h1{
-    font-size: 3rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    line-height: 3rem;
-  }
-  h1.indexheader{
-    line-height: 5rem;
-  }
-  h1.margin, p.margin, p.b, ul.a, .buttonb{
-      margin-left:15rem;
 
-  }
-  .contact-logo{
-    float:right;
-    width:40px;
-    height:30px;
-    padding-right: 1rem;
-  }
-  .footerlogo{
-    position: absolute;
-    top:centered;
-    left:48%;
-  }
-  p{
-    font-size: 2rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    max-width: 700px;
-  }
-}
 
 
 
