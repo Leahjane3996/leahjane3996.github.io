@@ -1,5 +1,7 @@
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
+
 }
 * {
   box-sizing: border-box;
@@ -49,16 +51,12 @@ header.a{
 
 footer {
   background-color: #F6E1E6;
-
    width: 100%;
    right: 0;
    left: 0;
    bottom: 0;
    color: black;
-  display:flex;
-  align-items: center;
-
-
+   padding-top: 3rem;
 }
 
 
@@ -140,13 +138,16 @@ li.a{
 .brandingimages{
 display: flex;
 flex-wrap: wrap;
-padding-left: 3rem;
-padding-right: 3rem;
+padding-left: 20rem;
+padding-right: 20rem;
 text-align: center;
+
+
 }
 .brand{
-  width:25%;
-  padding:5%;
+  width:30%;
+  padding:3%;
+  
 
 
 }
@@ -181,7 +182,7 @@ text-align: center;
   border-top:.25rem solid #F6E1E6;
 }
 .contact-logos{
-  padding-left: 68rem;
+  margin-right: 3rem;
 }
 .content-project{
   padding-top: 5rem;
@@ -190,7 +191,9 @@ text-align: center;
 .copyrightinfo{
 
 text-align: left;
-padding-top: 3rem;
+
+
+
 
 
 }
@@ -515,13 +518,21 @@ display: flex;
 
 
 /*images*/
-
+.brandlogo{
+  width:45%;
+  height:auto;
+  border: solid #f6f5f3;
+  border-width: thin;
+  margin-bottom: 3rem;
+}
 .contact-logo{
 
-  width:30px;
-  height:20px;
+  width:3rem;
+  margin-right:1.5rem;
+  float: right;
 
 }
+
 
 .container > * {
   flex: 1 1 auto;
@@ -597,13 +608,7 @@ margin-left: 3rem;
 
 }
 
-.brandlogo{
-  width:45%;
-  height:45%;
-  border: solid #f6f5f3;
-  border-width: thin;
-  margin-bottom: 3rem;
-}
+
 .logo{
   width:20rem;
 }
