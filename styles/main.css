@@ -109,45 +109,31 @@ li.a{
 /*sections*/
 
 
-
+.about-content1{
+  padding-top: 2rem;
+  max-width: 800px;
+}
 .aboutheader{
   text-align: center;
   padding-top: 5rem;
 
 }
-.about-content{
-  background-image: url("/images/headshot1.jpg");
-  background-size:cover;
-  height:1100px;
-  background-position: center;
-  background-repeat: no-repeat;
 
-  position: relative;
-
-}
-.about-content1{
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-  padding-top: 3rem;
-  background-color: white;opacity: .8;
-  width:40%;
-  font-size: 1.3rem;
-
-
-}
 .brandingimages{
 display: flex;
 flex-wrap: wrap;
-padding-left: 20rem;
-padding-right: 20rem;
+padding-left: 2rem;
+padding-right: 2rem;
 text-align: center;
 
 
 }
 .brand{
-  width:30%;
-  padding:3%;
-  
+  width:45%;
+  padding:2rem;
+
+
+
 
 
 }
@@ -216,6 +202,8 @@ text-align: left;
 .logo2{
 display: flex;
   justify-content: space-between;
+  padding-left:  4rem;
+  padding-right: 4rem;
 
 
 
@@ -225,6 +213,7 @@ display: flex;
 }
 .persona12{
   display:flex;
+  flex-wrap: wrap;
 
 }
 
@@ -280,7 +269,7 @@ display: flex;
 }
 .user-persona-1, .user-persona-2{
   box-shadow: 0 0 5px #f6f5f3;
-  width:50%;
+  width:100%;
   padding-left: 2rem;
   margin:2rem;
   padding-bottom:2rem;
@@ -537,6 +526,9 @@ display: flex;
 .container > * {
   flex: 1 1 auto;
 }
+.explore{
+  padding-bottom: 2rem;
+}
 
 .footerlogo2{
 width:4rem;
@@ -572,8 +564,8 @@ margin-left: 3rem;
 .landingpage1, .landingpage2, .landingpage3, .search1, .search2, .search3{
 
 
-  width:30%;
-  margin:1%;
+  width:85%;
+  margin: 2rem;
   box-shadow: 0 0 5px #f6f5f3;
 
 
@@ -673,8 +665,8 @@ margin-left: 3rem;
 
 }
 .wireframe-sketch, .wireframe1, .wireframe2, .wireframe3{
-  width:40%;
-  height:30%;
+  width:70%;
+  height:40%;
   margin:2rem;
 
   box-shadow: 0 0 5px #f6f5f3;
@@ -686,12 +678,30 @@ margin-left: 3rem;
 
 
 
+@media only screen and (min-width: 600px) {
+  h1{
+    font-size: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    line-height: 3rem;
+  }
+  h1.indexheader{
+    line-height: 5rem;
+  }
 
+
+  p{
+    font-size: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    max-width: 700px;
+  }
+}
 
 
 
 /*for desktop*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   h1{
     font-size: 4rem;
     margin-left: 5rem;
@@ -724,7 +734,42 @@ margin-left: 3rem;
 
 
   /*sections*/
+  .about-content{
+    background-image: url("/images/headshot1.jpg");
+    background-size:cover;
+    height:1100px;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    position: relative;
+
+  }
+  .about-content1{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    padding-top: 3rem;
+    background-color: white;opacity: .8;
+
+    font-size: 1.3rem;
+
+
+  }
+  .brandingimages{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  text-align: center;
+
+
+  }
+  .brand{
+    width:30%;
+    padding:3%;
+
+
+
+  }
   .cards{
     width:30%;
   }
@@ -742,8 +787,10 @@ margin-left: 3rem;
   .content1, .content2 {
     width: 40%;
 
+
     padding-top: 15rem;
     border: none;
+    padding-bottom: 5rem;
   }
 
 
@@ -758,8 +805,12 @@ margin-left: 3rem;
   .explore{
     width:48%;
   }
+  .headshot{
+    display: none;
+  }
   .hshimage{
     border:none;
+
   }
   .projectheader{
     border-bottom: .5rem solid #F6E1E6;
@@ -768,11 +819,27 @@ margin-left: 3rem;
   .role{
     width: 60%;
   }
-  .user-personas-images{
-    display:flex;
-    flex-wrap:wrap;
-  }
+.persona12{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.prototype-images{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
+
+}
+  .user-persona-1, .user-persona-2{
+    box-shadow: 0 0 5px #f6f5f3;
+    width:50%;
+    padding-left: 2rem;
+    margin:2rem;
+    padding-bottom:2rem;
+    background-color: #BECFC2;
+
+
+  }
 
 
 
@@ -784,7 +851,16 @@ margin-left: 3rem;
     width:40%;
   }
 
+  .landingpage1, .landingpage2, .landingpage3, .search1, .search2, .search3{
 
+
+    width:30%;
+    margin:1%;
+    box-shadow: 0 0 5px #f6f5f3;
+
+
+
+  }
 
   .hshimage1 {
     width: 60%;
@@ -812,10 +888,28 @@ margin-left: 3rem;
     width:40%;
     height:20%;
   }
+  .persona1, .persona2{
+    width:25%;
+    height:auto;
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
 
+  }
 
   .save{
     width:40%;
     border: solid #f6f5f3;
     border-width: thin;
+  }
+  .wireframe-sketch, .wireframe1, .wireframe2, .wireframe3{
+    width:40%;
+    height:30%;
+    margin:2rem;
+
+    box-shadow: 0 0 5px #f6f5f3;
+
+
+
+
   }
