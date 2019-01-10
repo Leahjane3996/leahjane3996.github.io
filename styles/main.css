@@ -151,7 +151,7 @@ text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   background-color: #F6E1E6;
-  width: 60%;
+  width: 100%;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1.6rem;
@@ -726,24 +726,7 @@ margin-left: 3rem;
     max-width: 700px;
   }
 
-  .cards {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    background-color: #F6E1E6;
-    width: 60%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 1.6rem;
-    text-align: center;
-    padding: 2rem;
-    margin:2rem;
-    display: inline-block;
-    line-height: 2.5rem;
-  }
-  .cards h1{
-    margin-top: 0;
-  }
+  
 
   /*sections*/
   .about-content{
@@ -784,6 +767,7 @@ margin-left: 3rem;
   }
   .cards{
     width:30%;
+    margin: 1%;
   }
 
   .content {
@@ -838,6 +822,8 @@ margin-left: 3rem;
   flex-wrap: nowrap;
 }
 .prototype-images{
+
+
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -865,16 +851,6 @@ margin-left: 3rem;
     width:40%;
   }
 
-  .landingpage1, .landingpage2, .landingpage3, .search1, .search2, .search3{
-
-
-    width:30%;
-
-    box-shadow: 0 0 5px #f6f5f3;
-
-
-
-  }
 
   .hshimage1 {
     width: 60%;
@@ -888,11 +864,11 @@ margin-left: 3rem;
   }
 
   .landingpage1, .landingpage2, .landingpage3, .search1, .search2, .search3{
-    border: solid #f6f5f3;
-    border-width: thin;
-    width:30%;
-    margin:2rem;
-    align-items: center;
+      box-shadow: 0 0 5px #f6f5f3;
+
+    width:31%;
+    margin:1%;
+
     vertical-align: top;
   }
 
