@@ -770,25 +770,22 @@ margin-left: 3rem;
     margin: 1%;
   }
 
-  .content {
+  .content, .content-project {
     display: inline-flex;
+    align-items: center;
 
 
   }
-  .content-project {
-    display: inline-flex;
-    padding-top: 5rem;
 
-  }
 
   .content1, .content2 {
     width: 40%;
 
 
 
-    padding-top: 15rem;
+
     border: none;
-    padding-bottom: 5rem;
+
   }
 
 
