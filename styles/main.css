@@ -140,7 +140,7 @@ text-align: center;
 .colors, .buttons, .icons, .bars, .typography {
 
 }
- .problem-solution, .competitive-analysis, .user-research, .user-personas, .user-stories, .user-flows, .user-flows-button, .wireframes, .usablitiytest1, .branding, .prototypes, .user-testing2, .conclusion, .about-content, .persona12{
+ .problem-solution, .competitive-analysis, .user-research, .user-personas, .user-stories, .user-flows, .user-flows-button, .wireframes, .usablitiytest1, .branding, .prototypes, .user-testing2, .conclusion, .about-content, .persona12, .stats{
 
   padding-top: 3rem;
   text-align: center;
@@ -217,7 +217,7 @@ display: flex;
 
 }
 
-.problem, .solution, .comp-an, .comp-an2, .comp-an3, .us-re, .us-per, .us-sto, .us-flo, .us-flo2, .wf, .ut1, .bran, .proto, .ut2, .con, .about-content1, .user-persona-1, .user-persona-2{
+.problem, .solution, .comp-an, .comp-an2, .comp-an3, .us-re, .us-per, .us-sto, .us-flo, .us-flo2, .wf, .ut1, .bran, .proto, .ut2, .con, .about-content1, .user-persona-1, .user-persona-2, .stats1{
   display: inline-block;
   text-align: left;
 }
@@ -507,13 +507,7 @@ display: flex;
 
 
 /*images*/
-.brandlogo{
-  width:45%;
-  height:auto;
-  border: solid #f6f5f3;
-  border-width: thin;
-  margin-bottom: 3rem;
-}
+
 .contact-logo{
 
   width:3rem;
@@ -865,6 +859,7 @@ margin-left: 3rem;
   .hshimage1 {
     width: 60%;
     height:100%;
+    
 
 
   }
