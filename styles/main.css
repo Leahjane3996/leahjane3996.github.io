@@ -726,7 +726,7 @@ margin-left: 3rem;
     max-width: 700px;
   }
 
-  
+
 
   /*sections*/
   .about-content{
@@ -865,10 +865,8 @@ margin-left: 3rem;
 
   .landingpage1, .landingpage2, .landingpage3, .search1, .search2, .search3{
       box-shadow: 0 0 5px #f6f5f3;
-
     width:31%;
     margin:1%;
-
     vertical-align: top;
   }
 
@@ -888,15 +886,15 @@ margin-left: 3rem;
 
   }
 
-  .save{
-    width:40%;
+  .save, .explore{
+    width:45%;
     border: solid #f6f5f3;
     border-width: thin;
   }
   .wireframe-sketch, .wireframe1, .wireframe2, .wireframe3{
-    width:40%;
+    width:45%;
     height:30%;
-    margin:2rem;
+    margin:1%
 
     box-shadow: 0 0 5px #f6f5f3;
 
