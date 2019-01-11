@@ -21,7 +21,7 @@ h1{
   line-height: 2rem;
 }
 h3{
-  font-size:2rem;
+  font-size:1.5rem;
   font-family: 'Poiret One', cursive;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -684,7 +684,9 @@ margin-left: 3rem;
     line-height: 5rem;
   }
 
-
+h3{
+  font-size: 2rem;
+}
   p{
     font-size: 2rem;
     margin-left: 5rem;
