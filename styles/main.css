@@ -30,11 +30,18 @@ h3{
   line-height: 2rem;
 
 }
-h3.p, p.p {
+ p.p {
   text-align: center;
+
+}
+h3.u{
+  margin-left: 5rem;
 }
 
 
+h3.n{
+  text-align: center;
+}
 header{
 
   justify-content: center;
@@ -108,15 +115,10 @@ li.a{
 
 /*sections*/
 
-.leafpic{
-  width:50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .about-content1{
-  padding-top: 2rem;
+
   max-width: 800px;
 }
 .aboutheader{
@@ -150,6 +152,7 @@ text-align: center;
   padding-top: 3rem;
   padding-bottom:3rem;
   text-align: center;
+  
 }
 
 .cards {
@@ -165,11 +168,15 @@ text-align: center;
   text-align: center;
   padding: 2rem;
   margin:2rem;
+
   display: inline-block;
   line-height: 2.5rem;
 }
-.cards h1{
-  margin-top: 0;
+.chart{
+  height:400px;
+  width:400px;
+  margin: 0 auto;
+}
 }
 
 .contact-logos{
@@ -203,7 +210,12 @@ text-align: left;
 .indexlogo{
   position: relative;
 }
-
+.leafpic{
+  width:50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .logo2{
 display: flex;
   justify-content: space-between;
@@ -223,7 +235,7 @@ display: flex;
 }
 
 .problem, .solution, .comp-an, .comp-an2, .comp-an3, .us-re, .us-per, .us-sto, .us-flo, .us-flo2, .wf, .ut1, .bran, .proto, .ut2, .con, .about-content1, .user-persona-1, .user-persona-2, .stats1{
-  display: inline-block;
+display: inline-block;
   text-align: left;
 }
 .projectheader{
@@ -271,7 +283,7 @@ display: flex;
   padding-top: 3rem;
 }
 .user-persona-1, .user-persona-2{
-  box-shadow: 0 0 5px #f6f5f3;
+  border:.2rem solid #F6E1E6;
   width:100%;
   padding-left: 2rem;
   margin:2rem;
@@ -305,7 +317,7 @@ display: flex;
 
 
 }
-.problem-solution, .user-research, .user-stories, .wireframes, .branding, .wireframe-images, .user-testing2,.usertesting-explore, .brandingimages{
+.problem-solution, .user-research, .user-stories, .wireframes, .branding, .wireframe-images, .user-testing2,.usertesting-explore, .brandingimages, .chart{
   background-color:#F8F8F8;
 }
 
@@ -661,9 +673,8 @@ margin-left: 3rem;
 }
 .vine{
   width:40%;
-  display: block;
- margin-left: auto;
- margin-right: auto;
+  margin:0 auto;
+
 
 }
 .wireframe-sketch, .wireframe1, .wireframe2, .wireframe3{
@@ -819,10 +830,11 @@ margin-right:2rem;
 }
   .user-persona-1, .user-persona-2{
     box-shadow: 0 0 5px #f6f5f3;
-    width:50%;
+    width:45%;
     padding-left: 2rem;
-    margin:2rem;
+    margin:3rem;
     padding-bottom:2rem;
+    margin:0 auto;
 
 
 

@@ -11,6 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130196353-1"></script>
   <script>
+
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -25,6 +26,8 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js">
 </script>
 </head>
 
@@ -145,17 +148,43 @@ function topFunction() {
         <div class="us-re">
           <h1>User Research </h1>
           <p> Next, I created and distributed a survey to find out if my idea for Home Away would appeal to the general public.  Most people are familar with and using cloud storage apps.  They also do work on their  homes. I learned:</p>
-          <h3 class="p"> Would you use a home improvement application?</h3>
+          <h3 class="u"> Would you use a home improvement application?</h3>
         </div>
       </section>
 
-      <section class="user-research">
+<section class="user-research">
+<div class="chart">
+        <canvas id="myPieChart" width="100" height="100"> </canvas>
 
-<img src="images/graph.png" class="graph"alt="graph">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+        <script>
+        var ctx = document.getElementById("myPieChart").getContext('2d');
+        var myPieChart = new Chart(ctx, {
+              type: 'pie',
+              data: {
+                labels: [
+                "Yes",
+                "Maybe",
+                "No"
+                ],
+                datasets: [{
+                data: [15, 4, 2],
+                backgroundColor: [
+                "#F6E1E6",
+                "#F4C6D1",
+                "white"
+                ],
+               }]
+            },
+               });
+        </script>
+      </div>
+    </section>
 
 
 
-      </section>
+
+
 
       <section class="user-research">
         <div class="us-re">
@@ -181,24 +210,24 @@ function topFunction() {
         </section>
         <section class="persona12">
           <div class="user-persona-1">
-            <h3 class="p"> Daniel J. </h3>
+            <h3 class="n"> Daniel J. </h3>
             <img src="images/persona1.png" class="persona1" alt="persona1">
             <p class="p"> Age: 35<br>
               Occupation: Executive Search<br>
               Location: Denver, Co<br>
               Gender: Male<br></p>
 
-              <h3>Biography</h3>
+              <<h3 class="u">Biography</h3>
               <p>Daniel is a business executive with a wife, two kids and a dog.  His family is building a new house in the neighborhood so he is currently researching the latest dishwasher models and exterior paint colors. In his free time, he enjoys doing home improvement projects and yard work.</p>
-              <h3> Motivations</h3>
+              <h3 class="u"> Motivations</h3>
               <p>Daniel is a very busy man who doesn't have a lot of time for home improvement, however he likes to live in a home his family is comfortable and happy in.  He uses a cloud storage app to save and organize different ideas for his new house that he is building.  He finds inspiration by looking at things his friends have done in the past.  Having all this information in one space helps Daniel find inspiration and stay focused. </p>
-              <h3>Goals</h3>
+              <<h3 class="u">Goals</h3>
               <ul class="a">
                 <li class="a">Save time</li>
                 <li class="a">Be inspired by friends</li>
                 <li class="a">Organize information</li>
               </ul>
-              <h3> Frustrations </h3>
+              <<h3 class="u"> Frustrations </h3>
               <ul class="a">
                 <li class="a">Making design decisions on colors, styles,models </li>
               </ul>
@@ -206,23 +235,23 @@ function topFunction() {
             </div>
 
             <div class="user-persona-2">
-              <h3 class="p"> Susan S. </h3>
+              <h3 class="n"> Susan S. </h3>
               <img src="images/persona2.png" class="persona2" alt="persona2">
               <p class="p"> Age: 33<br>
                 Occupation: Stay at home Parent<br>
                 Location: Denver, Co<br>
                 Gender: Female<br></p>
-                <h3>Biography</h3>
+                <h3 class="u">Biography</h3>
                 <p>Susan is a stay at home mom who lives in the city.  She is very involved in her children's school and community.  She is really in to DIY projects - especially when it comes to sprucing up her home.  Her hobbies include yoga, clean eating, and being in nature.</p>
-                <h3> Motivations</h3>
+                <h3 class="u"> Motivations</h3>
                 <p>Susan is artistic and really loves to do projects.  She enjoys updating her home - especially when she can repurpose something old!  Susan has young kids at home and she loves to spend nap-time working on something.  She has a lot of friends who also enjoy these types of projects so sharing her work online is a must.</p>
-                <h3>Goals</h3>
+                <h3 class="u">Goals</h3>
                 <ul class="a">
                   <li class="a">Beautify her home</li>
                   <li class="a">Keep busy during naptime</li>
                   <li class="a">Repurposing</li>
                 </ul>
-                <h3> Frustrations </h3>
+                <h3 class="u"> Frustrations </h3>
                 <ul class="a">
                   <li class="a">Spending too much time online looking at all of the different options and ideas</li>
                 </ul>
