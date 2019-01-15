@@ -130,7 +130,6 @@ li.a{
 .brandingimages{
   display: flex;
   flex-wrap: wrap;
-
 text-align: center;
 
 
@@ -144,15 +143,13 @@ text-align: center;
 
 
 }
-.colors, .buttons, .icons, .bars, .typography {
 
-}
  .problem-solution, .competitive-analysis, .user-research, .user-personas, .user-stories, .user-flows, .user-flows-button, .wireframes, .usablitiytest1, .branding, .branding-images, .prototypes, .user-testing2, .conclusion, .about-content, .persona12, .stats{
 
   padding-top: 3rem;
   padding-bottom:3rem;
   text-align: center;
-  
+
 }
 
 .cards {
@@ -184,6 +181,7 @@ text-align: center;
 }
 .content-project{
   padding-top: 5rem;
+
 }
 
 .copyrightinfo{
@@ -200,6 +198,7 @@ text-align: left;
   display: flex;
   flex-wrap: wrap;
   margin-top: 3rem;
+  margin-bottom: 3rem;
   justify-content: center;
 }
 
@@ -246,14 +245,11 @@ display: inline-block;
 }
 .prototypes{
   padding-bottom: 3rem;
-}
-.prototype-images{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
+  padding-top: 3rem;
 
 }
+
+
 
 
 
@@ -310,10 +306,11 @@ display: inline-block;
   justify-content: space-around;
   padding:3rem;
 }
-.wireframe-images{
+.wireframe-images, {
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 2rem;
 
 
 }
@@ -557,8 +554,9 @@ margin-left: 3rem;
   padding-bottom: 2rem;
 }
 .headshot1{
-  width:40%;
-  padding-top: 6rem;
+  width:100%;
+
+
 }
 
 .hshimage {
@@ -755,9 +753,8 @@ h3{
   .brandingimages{
   display: flex;
   flex-wrap: wrap;
-justify-content: center;
-margin-left: 2rem;
-margin-right:2rem;
+  margin:0 auto;
+  justify-content: center;
 
 
   }
@@ -783,10 +780,6 @@ margin-right:2rem;
 
   .content1, .content2 {
     width: 40%;
-
-
-
-
     border: none;
 
   }
@@ -818,26 +811,17 @@ margin-right:2rem;
 .persona12{
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
 }
-.prototype-images{
 
-
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-
-}
   .user-persona-1, .user-persona-2{
-    box-shadow: 0 0 5px #f6f5f3;
-    width:45%;
-    padding-left: 2rem;
-    margin:3rem;
-    padding-bottom:2rem;
-    margin:0 auto;
 
+    width:40%;
+    padding: 1.5rem;
 
-
+  }
+  .wireframe-images, .usertesting-save, {
+    justify-content: center;
   }
 
 
@@ -863,8 +847,8 @@ margin-right:2rem;
   }
 
   .landingpage1, .landingpage2, .landingpage3, .search1, .search2, .search3{
-      box-shadow: 0 0 5px #f6f5f3;
-    width:31%;
+    box-shadow: 0 0 5px #f6f5f3;
+    width:30%;
     margin:1%;
     vertical-align: top;
   }
@@ -889,13 +873,15 @@ margin-right:2rem;
     width:45%;
     border: solid #f6f5f3;
     border-width: thin;
+    margin:1%;
   }
   .wireframe-sketch, .wireframe1, .wireframe2, .wireframe3{
     width:45%;
     height:30%;
-    margin:1%
+    margin:1%;
 
-    box-shadow: 0 0 5px #f6f5f3;
+
+
 
 
 
