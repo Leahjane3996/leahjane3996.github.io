@@ -306,7 +306,7 @@ display: inline-block;
   justify-content: space-around;
   padding:3rem;
 }
-.wireframe-images, {
+.wireframe-images {
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
