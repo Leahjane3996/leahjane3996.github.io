@@ -35,7 +35,7 @@ h3{
 
 }
 h3.u{
-  margin-left: 5rem;
+  margin-left: 3rem;
 }
 
 
@@ -98,7 +98,7 @@ h1.indexwork{
 }
 
 ul.a {
-  margin-left:4rem;
+  margin-left:2rem;
 
   font-size: 1.6rem;
   line-height: 3rem;
@@ -170,11 +170,11 @@ text-align: center;
   line-height: 2.5rem;
 }
 .chart{
-  height:400px;
-  width:400px;
+  height:50%;
+  width:50%;
   margin: 0 auto;
 }
-}
+
 
 .contact-logos{
   margin-right: 3rem;
@@ -208,6 +208,9 @@ text-align: left;
 
 .indexlogo{
   position: relative;
+}
+.intro{
+  padding-top: 3rem;
 }
 .leafpic{
   width:50%;
@@ -361,7 +364,7 @@ display: inline-block;
   font-weight: 300;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
-  margin-left: 5rem;
+  margin-left: 3rem;
   margin-bottom: 3rem;
   margin-top:3rem;
 }
@@ -724,6 +727,9 @@ h3{
   h1.indexheader{
     line-height: 5rem;
   }
+  h3.u{
+    margin-left: 5rem;
+  }
 
   header{
     display: flex;
@@ -746,7 +752,9 @@ h3{
   p.cr{
     font-size: 1.2rem;
   }
-
+ul.a{
+  margin-left: 4rem;
+}
 
   /*sections*/
 
@@ -765,11 +773,18 @@ h3{
 
 
   }
+  .button, .buttonb{
+    margin-left: 5rem;
+  }
   .cards{
     width:30%;
     margin: 1%;
   }
-
+  .chart{
+    height:400px;
+    width:400px;
+    margin: 0 auto;
+  }
   .content, .content-project {
     display: inline-flex;
     align-items: center;
