@@ -62,7 +62,7 @@ footer {
    left: 0;
    bottom: 0;
    color: black;
-   padding-top: 3rem;
+
 }
 
 
@@ -178,7 +178,11 @@ text-align: center;
 
 .contact-logos{
   margin-right: 3rem;
+  
+
+
 }
+
 .content-project{
   padding-top: 5rem;
 
