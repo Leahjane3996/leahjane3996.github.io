@@ -62,6 +62,10 @@ footer {
    left: 0;
    bottom: 0;
    color: black;
+   display: flex;
+   align-items: center;
+  justify-content: space-between;
+
 
 }
 
@@ -177,8 +181,7 @@ text-align: center;
 
 
 .contact-logos{
-  margin-right: 3rem;
-  
+
 
 
 }
@@ -191,6 +194,10 @@ text-align: center;
 .copyrightinfo{
 
 text-align: left;
+
+
+
+
 
 
 
