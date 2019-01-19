@@ -29,7 +29,9 @@ h3{
   margin-bottom:2rem;
   line-height: 2rem;
 
+
 }
+
  p.p {
   text-align: center;
 
@@ -228,14 +230,18 @@ text-align: left;
   padding-bottom: 20rem;
 
   text-align: center;
-  background-image: url('/images/headshot.jpg');
-  height:100%;
-  background-size: cover;
+
 
 
 }
 .leafpic{
   width:50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.leafpic2{
+  width:75%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -580,7 +586,9 @@ margin-left: 3rem;
   padding-bottom: 2rem;
 }
 .headshot1{
-  width:100%;
+
+
+width:60%;
 
 
 }
@@ -616,6 +624,10 @@ margin-left: 3rem;
 .leaf{
   width: 40%;
   height:8%;
+}
+.leaf2{
+  width: 20%;
+
 }
 
 .leahcoover{
@@ -782,6 +794,9 @@ ul.a{
 
   /*sections*/
 
+.about-content{
+
+}
   .brandingimages{
   display: flex;
   flex-wrap: wrap;
@@ -836,7 +851,10 @@ ul.a{
   .explore{
     width:48%;
   }
-
+.headshot{
+  width:25%;
+  margin:0 auto;
+}
   .hshimage{
     border:none;
 
