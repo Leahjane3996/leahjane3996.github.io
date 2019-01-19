@@ -180,11 +180,6 @@ text-align: center;
 }
 
 
-.contact-logos{
-
-margin-right: 4rem;
-
-}
 
 .content-project{
   padding-top: 5rem;
@@ -885,7 +880,9 @@ ul.a{
 
 
   /*images*/
-
+.contact-logos{
+  margin-right: 4rem;
+}
   .explore{
     border: solid #f6f5f3;
     border-width: thin;
