@@ -118,7 +118,8 @@ li.a{
   background: url('/images/bullet.png') no-repeat left top;
   padding-left:3rem;
 }
-
+strong
+{ font-weight: 400; }
 /*sections*/
 
 
@@ -390,9 +391,11 @@ display: inline-block;
   margin-left: 3rem;
   margin-bottom: 3rem;
   margin-top:3rem;
+  transition: 0.5s;
 }
 
-.button:hover, .buttonb:hover {background-color: #FFC6D0}
+.button:hover, .buttonb:hover {
+  background-color: #FFC6D0}
 
 .button:active, .buttonb:active {
   background-color: #FFC6D0;
@@ -499,6 +502,7 @@ display: inline-block;
 .navigation .menu-icon .navicon:after {
   top: -5px;
 }
+
 
 /* menu btn */
 
