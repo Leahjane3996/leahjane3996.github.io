@@ -118,6 +118,7 @@ li.a{
   background: url('/images/bullet.png') no-repeat left top;
   padding-left:3rem;
 }
+
 strong
 { font-weight: 400; }
 /*sections*/
@@ -435,14 +436,13 @@ display: inline-block;
   line-height: 2rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-
-
-
 }
+
 
 .navigation li a:hover,
 .navigation .menu-btn:hover {
   background-color: #f4f4f4;
+
 }
 
 .navigation .logo {
@@ -461,7 +461,7 @@ display: inline-block;
 .navigation .menu {
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out;
+  transition: max-height .5s ease-out;
 }
 
 /* menu icon */
