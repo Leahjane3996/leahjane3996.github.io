@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leah Coover</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130196353-1"></script>
+  <script>
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130196353-1');
+  </script>
+  <script>
+
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js">
+</script>
+</head>
+
+<body>
+
+  <div class="container">
+    <section class="navigation">
+      <a href="index.html" class="logo"><img src="images/leahcoover2.png" class="logo" alt=leaf></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class=><a href="project.html"><span style="color: #ECA2B4">Projects</span></a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+
+
+
+    <section class="content-project">
+      <div class="content2">
+        <h1> Sweet Home </h1>
+        <p> Sweet Home is a web based app centered around home improvement.  Users can get inspired through a catalogue of pictures, store that information found, and lastly use it as a vessel to share their ideas.</p>
+        <a href="https://invis.io/CDNJOS6APXS" class="button">View Prototype</a>
+      </div>
+      <div class= "hshimage1">
+        <img src="images/sweethome.png" class="hshimage"alt="houses">
+      </div>
+    </section>
+
+
+
+
+    <section class="design-roles">
+      <div class="cards">
+        <h3> Design roles</h3>
+        <ul>
+          <li>UX Design</li>
+          <li> Visual Design</li>
+          <li> Brand & Identity </li>
+        </ul>
+      </div>
+
+      <div class="cards">
+        <h3>Design Deliverables</h3>
+        <ul>
+          <li>User Surveys</li>
+          <li> Personas </li>
+          <li>Competitive Analysis </li>
+          <li>Concept & Identity</li>
+          <li>User Stories & Flows</li>
+          <li>Paper Prototype</li>
+          <li>Wire-Frames</li>
+          <li>User Testing</li>
+          <li>Visual Design</li>
+        </ul>
+      </div>
+
+      <div class="cards">
+        <h3>Design Tools</h3>
+        <ul>
+          <li>Figma</li>
+          <li> inVision</li>
+          <li>Draw.io</li>
+          <li>Google Forms</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="problem-solution">
+      <div class="problem">
+        <h1> Problem </h1>
+        <p> Users wanted a web application to browse, save, organize, create, and share information specifically related to home improvement.</p>
+      </div>
+      <div class="solution">
+        <h1> Solution </h1>
+        <p> Home Away is a place for home lovers to be inspired and also a social network.  Users are able to browse different ideas from friends or search terms.  They can then save and organize ideas they like.  The final part is the capacity to share and also communicate opinions with friends and family.</p>
+      </div>
+    </section>
+
+
+    <section class="competitive-analysis">
+      <div class="comp-an">
+        <h1>Competitive Analysis </h1>
+
+
+        <div class="logo2">
+          <img src="images/google.png" class="logoimage2" alt="googledrive">
+          <img src="images/pinterest.png" class="logoimage2" alt="pinterest">
+          <img src="images/dropbox.png" class="logoimage2" alt="dropbox">
+        </div>
+
+
+        <p>The first step in my research process was to learn about other competitors in the market.  I studied Google Drive, Pinterest, and Dropbox to assess strengths weaknesses opportunities and threats (Swot Analysis).
+          I then found an area that there was an opportunity for a new competitor to enter which led me to my idea of Home Away.  Some key points I took away for my app were:</p>
+
+
+
+          <ul class="a">
+            <li class="a">Visually appealing (picture organization)</li>
+            <li class="a">Focused and organized</li>
+            <li class="a">Free storage</li>
+            <li class="a">Ability to collaborate </li>
+          </ul>
+
+          <a href="https://docs.google.com/document/d/1a5zjCHQZyRPOYfPhgzzcNN8V_NmfFjCrpqLZT9Xv7VI/edit?usp=sharing" class="button">View Swot Analysis</a>
+        </div>
+      </section>
+
+
+
+
+
+      <section class="user-research">
+        <div class="us-re">
+          <h1>User Research </h1>
+          <p> Next, I created and distributed a survey to find out if my idea for Home Away would appeal to the general public.  Most people are familar with and using cloud storage apps.  They also do work on their  homes.</p>
+          <h3 class="u"> Would you use a home improvement application?</h3>
+        </div>
+      </section>
+
+<section class="user-research">
+<div class="chart">
+        <canvas id="myPieChart" width="100" height="100"> </canvas>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+        <script>
+        var ctx = document.getElementById("myPieChart").getContext('2d');
+        var myPieChart = new Chart(ctx, {
+              type: 'pie',
+              data: {
+                labels: [
+                "Yes",
+                "Maybe",
+                "No"
+                ],
+                datasets: [{
+                data: [15, 4, 2],
+                backgroundColor: [
+                "#F6E1E6",
+                "#F4C6D1",
+                "white"
+                ],
+               }]
+            },
+               });
+        </script>
+      </div>
+    </section>
+
+
+
+
+
+
+      <section class="user-research">
+        <div class="us-re">
+          <ul class="a">
+            <li class="a">90.4% would be open to using a new home improvement application</li>
+            <li class="a">Most of the people surveyed already get most of their home improvement inspiration from the internet</li>
+            <li class="a">These users want to find content on the web, save it, and organize it</li>
+            <li class="a">Some of the users would like to share and collaborate with others on this as well</li>
+            <li class="a">  Of these participants, a lot of them said they use these apps when they want to start a new project</li>
+          </ul>
+
+
+          <p class="b"> All of this research leads me to believe a home improvement cloud storage application would be successful.</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNzZlZk-Fbu0z0jCVwpnEFFXqOevNVgB0ajQIyGxhivHzTMg/viewform?usp=sf_link" class="buttonb">View User Survey</a>
+
+        </div>
+      </section>
+
+      <section class="user-personas">
+        <div class="us-per">
+          <h1>User Personas </h1>
+          <p>The personas represent home owners who are interested in improvement. </p>
+        </section>
+        <section class="persona12">
+          <div class="user-persona-1">
+            <h3 class="n"> Daniel J. </h3>
+            <img src="images/persona1.png" class="persona1" alt="persona1">
+            <p class="p"> Age:<strong>35</strong><br>
+              Occupation: <strong>Executive Search</strong><br>
+              Location: <strong>Denver, Co</strong><br>
+              Gender:<strong> Male</strong><br></p>
+
+              <<h3 class="u">Biography</h3>
+              <p>Daniel is a business executive with a wife, two kids and a dog.  His family is building a new house in the neighborhood so he is currently researching the latest dishwasher models and exterior paint colors. In his free time, he enjoys doing home improvement projects and yard work.</p>
+              <h3 class="u"> Motivations</h3>
+              <p>Daniel is a very busy man who doesn't have a lot of time for home improvement, however he likes to live in a home his family is comfortable and happy in.  He uses a cloud storage app to save and organize different ideas for his new house that he is building.  He finds inspiration by looking at things his friends have done in the past.  Having all this information in one space helps Daniel find inspiration and stay focused. </p>
+              <<h3 class="u">Goals</h3>
+              <ul class="a">
+                <li class="a">Save time</li>
+                <li class="a">Be inspired by friends</li>
+                <li class="a">Organize information</li>
+              </ul>
+              <<h3 class="u"> Frustrations </h3>
+              <ul class="a">
+                <li class="a">Making design decisions on colors, styles,models </li>
+              </ul>
+
+            </div>
+
+            <div class="user-persona-2">
+              <h3 class="n"> Susan S. </h3>
+              <img src="images/persona2.png" class="persona2" alt="persona2">
+              <p class="p"> Age: <strong>33</strong><br>
+                Occupation:<strong> Stay at home Parent</strong><br>
+                Location:<strong> Denver, Co</strong><br>
+                Gender: <strong>Female</strong><br></p>
+                <h3 class="u">Biography</h3>
+                <p>Susan is a stay at home mom who lives in the city.  She is very involved in volunteering at children's school and she also does a lot with the community.  She is really in to DIY projects - especially when it comes to sprucing up her own home.  Her hobbies include yoga, clean eating, and being in nature.</p>
+                <h3 class="u"> Motivations</h3>
+                <p>Susan is artistic and really loves to do projects.  She enjoys updating her home frequently - especially when she can repurpose something old into something trendy and new!  Susan has young kids at home and she loves to spend nap-time working on something productive.  She has a lot of friends who also enjoy these types of projects so finding new ideas and sharing her work online is a must.</p>
+                <h3 class="u">Goals</h3>
+                <ul class="a">
+                  <li class="a">Beautify her home</li>
+                  <li class="a">Keep busy during naptime</li>
+                  <li class="a">Repurposing</li>
+                </ul>
+                <h3 class="u"> Frustrations </h3>
+                <ul class="a">
+                  <li class="a">Spending too much time online looking at all of the different options and ideas</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="user-stories">
+            <div class="us-sto">
+              <h1>User Stories </h1>
+              <p> Now that I had information about the type of web application my users were interested in it was time to develop User Stories to help me decide which features would be most important for this site.  I came up with user stories of high importance and also low and medium importances.  This gave me a place to start my focus on and some things to think about for future additions to the project.</p>
+              <p>The most important features were for the user to be able to:</p>
+                <ul class="a">
+                  <li class="a">As a user I want to browse photos, links, videos that my friends have shared</li>
+                  <li class="a">As a user I want to save photos, links and videos</li>
+                  <li class="a">As a user I want to share a saved file with friends</li>
+                </ul>
+                <a href="https://docs.google.com/spreadsheets/d/1s24t9u4cdhIYNoyvLDsj26DuSPM-bZwmk92KvIEQyxA/edit?usp=sharing" class="buttonb">View User Stories</a>
+              </div>
+            </section>
+
+            <section class="user-flows">
+              <div class="us-flo">
+                <h1>User Flows </h1>
+                <p> The next step in the process was for me to figure out how the users were going to complete these user stories.  This is where I drew out the User Flows.</p>
+                <a href="https://drive.google.com/file/d/1rgC-4VeSnM2KuDgOk5CASOEXoTBfkgRg/view?usp=sharing" class="buttonb">View User Flows</a>
+              </div>
+            </section>
+            <img src="images/userstorysketch.png" class="userflowpic" alt="userflows">
+            <img src="images/userflows.png" class="userflowpic" alt="userflows">
+
+
+
+
+
+
+
+            <section class="wireframes">
+              <div class="wf">
+                <h1>Wireframes </h1>
+                <p>The user flows helped me to set up my wireframes so I could visualize how the site would be set up and how it would work.
+                </p>
+              </div>
+            </section>
+            <section class="wireframe-images">
+              <img src="images/wireframesketch1.png" class="wireframe-sketch"alt="wireframe">
+              <img src="images/explorewireframe.png"class="wireframe1" alt="wireframe">
+              <img src="images/followingwf.png"class="wireframe2" alt="wireframe">
+              <img src="images/searchwf.png"class="wireframe3" alt="wireframe">
+
+            </section>
+
+            <section class="usablitiytest1">
+              <div class="ut1">
+                <h1 class="margin">Usability Test 1 </h1>
+                <p class="margin">Organizing content: During my first round of testing users had a hard time finding where to save and organize content.  I needed to add the move button to an obvious location.  I also needed to add a way to move a saved item that was already in a box.
+                </p>
+              </div>
+            </section>
+
+            <section class="usertesting-save">
+              <img src="images/save3.png" class="save" alt="save">
+
+              <img src="images/save2.png" class="save" alt="Save">
+            </section>
+
+            <section class="branding">
+              <div class="bran">
+                <h1>Branding</h1>
+                <p>While working on the branding I was looking to show loyalty and trust while also being refreshing and friendly. </p>
+              </div>
+            </section>
+            <section class="brandingimages">
+              <div class="brand">
+              <h3>Color</h3>
+              <img src="images/colors.png" class="colors" alt="colors">
+              </div>
+
+              <div class="brand">
+              <h3>Buttons</h3>
+              <img src="images/buttons.png" class="buttons" alt="buttons">
+            </div>
+            <div class="brand">
+              <h3>Typography</h3>
+              <img src="images/typography.png" class="typography" alt="typography">
+            </div>
+
+            <div class="brand">
+              <h3>Bars & Dropdowns</h3>
+              <img src="images/bars.png" class="bars" alt="bars">
+            </div>
+            <div class="brand">
+              <h3>Icons & Images</h3>
+              <img src="images/icons.png" class="icons" alt="icons">
+            </div>
+
+            <div class="brand">
+              <h3>Logos</h3>
+              <img src="images/logohsh.png" class="brandlogo" alt="logo">
+            </div>
+            </section>
+
+            <section class="prototypes">
+              <div class="proto">
+                <h1>Prototypes </h1>
+                <p> Next, I put together the branding and style guide along with the wireframes to create the prototypes.  There were several iterations.  Below you can see three stages of the landing page as well as the main search page.
+                </div>
+
+
+              <section class="prototype-images">
+
+                  <img src="images/landingpage1.png" class="landingpage1" alt="Prototype">
+                  <img src="images/landingpage2.png"class="landingpage2" alt="Prototype">
+                  <img src="images/landingpage3.png"class="landingpage3" alt="Prototype">
+
+              </section>
+              <section class="prototypes">
+                <div class="proto">
+
+                  <p> From the first iteration to the last, I changed quite a bit.  First, I added more information to keep the reader's interest.  I also made several call to action buttons so the user is able to enter the site at any point of the page.  Adding a picture and testimonial validates the page and the site!</p>
+                  </div>
+                </section>
+
+
+            <section class="prototype-images">
+                <div class="prototype-images2">
+                  <img src="images/search1.png"class="search1" alt="Prototype">
+                  <img src="images/search2.png"class="search2" alt="Prototype">
+                  <img src="images/search3.png"class="search3" alt="Prototype">
+                </div>
+              </section>
+                  <section class="prototypes">
+                    <div class="proto">
+                  <p> With this page, I did a lot of work around the navigation and search bar.  I wanted to make it less crowded, easy to read, and intuitive.</p>
+                </div>
+              </section>
+
+
+
+
+
+
+
+              <section class="user-testing2">
+                <div class="ut2">
+                  <h1 class="margin">Usability Test 2 </h1>
+                  <p class="margin"> Cursive Typeface: Users had a hard time reading the cursive when it was anywhere but the logo.  I ended up removing that typeface from everything else.
+                  </p>
+                </div>
+              </section>
+
+              <section class="usertesting-explore">
+                <img src="images/explorecursive.png" class="explore" alt="Prototype">
+                <img src="images/explorept.png"class="explore" alt="Prototype">
+              </section>
+
+              <section class= "conclusion">
+                <div class="con">
+                  <h1 class="margin">Conclusion </H1>
+                    <p class="margin"> During the creation of Sweet Home, I found user testing really helpful.  I learned that a lot of designs that I like the look of might not be the most functional or might not be appealing to other people.  I think the User survey was really helpful in starting off the project and deciding what to do, and preference tests and usability tests were really helpful along the way.
+                      I learned a lot about design in general and what is accepted among the design community.  Overall, I think the most important thing I realized was how important spacing and size and consistency are to help the design look polished and professional.
+
+                    <div class="sweethomelogo">
+                      <img src="images/sweethomelogo.png"class="swlogo" alt="Logo">
+                    </div>
+
+
+
+                <button onclick="topFunction()" class="button" title="Go to top">Back to top</button>
+              </div>
+            </section>
+
+            <footer>
+
+
+
+              <div class="copyrightinfo">
+
+                <p class="cr"> &copy; 2018 Designed and Developed by Leah Coover </p>
+              </div>
+              <div class="contact-logos">
+                <a href="https://www.linkedin.com/in/leahcoover/"target="_blank"><img src="images/linkedin3.png" class="contact-logo" alt="linkedin"></a>
+                <a href="mailto:ljoberh@gmail.com"target="_blank"><img src="images/mail.png" class="contact-logo" alt="google"></a>
+              </div>
+
+
+
+
+            </footer>
+              </div>
+            </body>
+            </html>
